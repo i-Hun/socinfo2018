@@ -8,4 +8,20 @@
 }
 
 
-/* 376832-1512037542-au */
+.logo_hse img{
+    height: 100px;
+}
+
+.logo_linis img {
+    height: 100px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #1f88ca;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #333;
+}

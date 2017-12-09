@@ -31,9 +31,7 @@ Text Domain:  parallax-one
 #oii-branding .logo:first-child {
 	margin-left: 0;
 }
-#oii-branding .logo img {
-	border: 1px solid white;
-}
+
 @media (max-width: 580px) {
 	#oii-branding {
 		top: 125px;
@@ -117,3 +115,5 @@ header .oii-navbar-brand .logo {
 .sprkl-powerd {
 	display: none !important;
 }
+
+
