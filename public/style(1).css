@@ -2212,8 +2212,8 @@ button.control_next.fade-btn {
 	border-radius: 0;
 }
 
-.member-pic img {
-	width: 100%;
+.team-member, .member-pic img {
+	width: 220px;
 }
 
 .member-details {
