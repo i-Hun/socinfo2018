@@ -7967,3 +7967,45 @@ p.edd-alert-error,
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+
+
+.keynotes .pic-container {
+	top: -150px;
+}
+
+
+.keynotes .pic-container-inner {
+	width: 200px;
+	height: 200px;
+}
+
+.keynotes .keynote {
+	width: 45%;
+}
+
+.keynote {
+	margin-top: 100px;
+}
+
+
+.keynote-title {
+	font-weight: 700;
+}
+
+.keynote-links {
+	font-size: 28px;
+}
+
+.keynote p {
+	font-style: normal;
+}
+
+.keynote.left {
+	float: left;
+}
+
+.keynote.right {
+	float: right;
+}
+
