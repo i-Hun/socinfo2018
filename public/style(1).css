@@ -7999,6 +7999,8 @@ p.edd-alert-error,
 
 .keynote p {
 	font-style: normal;
+	margin-top: 10px;
+	line-height: 1.5;
 }
 
 .keynote.left {
@@ -8008,8 +8010,6 @@ p.edd-alert-error,
 .keynote.right {
 	float: right;
 }
-
-
 
 
 
