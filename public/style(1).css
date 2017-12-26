@@ -8023,3 +8023,20 @@ p.edd-alert-error,
 	margin: 0;
 }
 
+
+
+
+
+/*Соцсети всерху*/
+
+.client-logos {
+	padding: 0;
+}
+
+.client-logos li {
+	font-size: 26pt;
+}
+
+.client-logos a {
+	color: #333;
+}

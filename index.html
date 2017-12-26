@@ -84,7 +84,8 @@
 						<div id="site-header-menu" class="site-header-menu">
 							<nav id="site-navigation" class="main-navigation" role="navigation">
 								<div class="menu-main-menu-container">
-									<ul id="menu-main-menu" class="primary-menu small-text"><li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#parallax_header"><i></i></a></li>
+									<ul id="menu-main-menu" class="primary-menu small-text">
+										<li class="menu-item menu-item-type-custom menu-item-object-custom"<a href="#parallax_header"><i></i></a></li>
 										<li class="dropdown menu-item menu-item-home">
 											<a href="#about">About <i class="fas fa-angle-down"></i></a>
 											<ul class="dropdown-menu">
@@ -118,7 +119,7 @@
 											</ul>
 										</li>
 										<li class="dropdown menu-item menu-item-home">
-											<a href="#registration-visa">Registration & Visa<i class="fas fa-angle-down"></i></a>
+											<a href="#registration-visa">Registration & Visa <i class="fas fa-angle-down"></i></a>
 											<ul class="dropdown-menu">
 												<li><a href="#registration">Registration fees & times</a></li>
 												<li><a href="#visa">Getting Russian visa</a></li>
@@ -132,7 +133,6 @@
 												<li><a href="#accommodation">Accommodation</a></li>
 											</ul>
 										</li>
-
 									</ul>
 								</div>
 							</nav>
@@ -186,12 +186,20 @@
 	<!-- /END HOME / HEADER  -->
 	
 		<div itemprop="" id="content" class="content-warp" role="main">
+		<div class="clients white-bg" id="clients" role="region" aria-label=" Affiliates Logos">
+			<div class="container">
+				<ul class="client-logos" data-scrollreveal="enter top over 1.5s after 1s" data-sr-init="true" data-sr-complete="true">
+					<li><a href="mailto:socinfo2018@gmail.com"><i class="far fa-envelope"></i></a></li>
+					<li><a href="https://www.facebook.com/socinfo2018/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				</ul>
+			</div>
+		</div>
 
  <section class="section-custom section-bordered about" id="about" role="region" aria-label="about">
 	<div class="section-overlay-layer">
 		<div class="container">
 			<div class="section-header text-left">
-				<h2 class="text-left dark-text"></h2><h2>About</h2><div class="colored-line-left"></div>
+				<h2 class="text-left dark-text">About</h2><div class="colored-line-left"></div>
 			</div>
 			<div class="row">				
 				<div class="col-md-12 content-section">
@@ -205,8 +213,10 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 					</p>
 
 					<h3 id="sponsors">Sponsors</h3>
+					<div class="text-center">
 						<a href="http://dsp.acm.org/" target="_blank" rel="noopener"><img src="public/acm-300x105.png" alt="" width="213" height="74" ></a>
-						<a href="http://www.springer.com/gb/" target="_blank" rel="noopener"><img src="public/1280px-Springer.svg_-300x83.png" width="213" height="59"></a>
+						<a href="http://www.springer.com/" target="_blank" rel="noopener"><img src="public/1280px-Springer.svg_-300x83.png" width="213" height="59"></a>
+					</div>
 					<h3 id="dates">Important dates</h3>
 
 					<div class="row">
@@ -358,8 +368,9 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				<div class="colored-line-left"></div>
 			</div>
 			<div class="row">
-			<h3 id="call-for-papers">Call for papers</h3>
+			
 				<div class="col-md-6 content-section">
+					<h3 id="call-for-papers">Call for papers</h3>
 					<p>The International Conference on Social Informatics (SocInfo18) is an interdisciplinary venue that brings together researchers from the computational and social sciences interested in joint research of socio-technical phenomena. The goal of the conference is to provide a forum to help scholars from the two disciplines define common research objectives and explore methodologies. The organizers welcome a broad range of contributions, from those that apply methods from the social sciences to the study of socio-technical systems, to the application of computational methods to the study of complex social processes and the use of social concepts in the design of information systems.</p>
 					<p>SocInfo18 offers an opportunity for the dissemination of knowledge between the two communities by soliciting presentations of original research papers and experience-based case studies in computer science, sociology, psychology, political science, public health, media & communication studies, economics, linguistics, artificial intelligence, social network analysis, and other disciplines that can shed light on the open questions in the growing field of computational social science.</p>
 					<p>SocInfo18 will also offer workshops and keynote talks that will be tailored to enhance the collaboration between the two research cultures in an era when social interactions are ubiquitous and span offline, online and augmented reality worlds.
@@ -395,7 +406,7 @@ Research topics of interest include, but are not limited to:</p>
 
 				</div>
 				<div class="col-md-6 content-section">
-					<h3>Information about Submission</h3>
+					<h4>Information about Submission</h4>
 					<p>We solicit submission of two types of contribution</p>
 					<ul>
 						<li>Full papers: should not exceed 14 pages (excluding references and any appendix)</li>
@@ -416,7 +427,7 @@ Research topics of interest include, but are not limited to:</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 content-section">
 					<h3 id="call-for-workshops">Call for workshops</h3>
 					<p>The SocInfo’18  Committee invites proposals for Workshops Day of the conference. All workshops will be held on Tuesday, September 24, 2018, at 123 Kanal Griboyedova Emb, St. Petersburg (which is not the venue of the main conference).</p>
 					<p>The preferred formats are group discussions and practical tutorials.  A tutorial should provide either an in depth look at an emerging technique or software package or a broad summary of an important direction in the field of social informatics, preferably with a practical training. A group discussion should provide an opportunity to informally discuss issues with a selected focus, especially conceptual, methodological or practical  difficulties of social informatics, as opposed to presenting final results. Workshops should not be structured as mini-conferences dominated by long talks and short discussions. Instead, the organizers are encouraged to promote different types of activities including games, brainstorming and networking sessions. All workshops should be interactive and involve between 15 and 40 members. Finally, the workshops should have the potential to attract the interest of researchers in computer science and social sciences, and possibly developers and practitioners.</p>
@@ -447,7 +458,7 @@ Research topics of interest include, but are not limited to:</p>
 						<li>Luca Maria Ayello, Bell Labs, UK (?)</li>
 						<li>Sergei Koltcov, HSE, Russia</li>
 					</ul>
-					<p>Submission E-mail: TODO</p>
+					<p>Submission E-mail: <a href="mailto:socinfo2018@gmail.com">socinfo2018@gmail.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -1115,7 +1126,7 @@ Research topics of interest include, but are not limited to:</p>
 					<h3>STEP 2: Visa Invitation Letter</h3>
 
 					<p>If a letter of invitation is needed for the visa application, we can provide a scan of the invitation letter upon request. Visa invitations may only be issued after payment and receipt of the conference registration fees. The visa invitation letter for most foreign nationals is issued by the Migration Service within 30 days after the application, so please make sure to take care about it in advance. The invitation letter for the EU-citizens (exept the UK and Ireland) are issued within 1 week after the application.</p>
-					<p>In order to prepare the invitation letter, we will need a scan of your passport (the pages detailing your name and the authority which issued the Passport) and a filled out form, which may be found TODO. Please, send your documents to TODO with the topic "VISA INVITATION LETTER"</p>
+					<p>In order to prepare the invitation letter, we will need a scan of your passport (the pages detailing your name and the authority which issued the Passport) and a filled out form, which may be found TODO. Please, send your documents to <a href="mailto:socinfo2018@gmail.com">socinfo2018@gmail.com</a> with the topic "VISA INVITATION LETTER"</p>
 					<p><b>IMPORTANT!</b> Please check at the Russian embassy if you are required to provide an original of the visa invitation letter. It is always better to ask the Russian consulate first whether they accept copies of invitations or only originals and to specify it when applying for an invitation to facilitate processing. </p>
 					
 					<h3>STEP 3: Russian Visa</h3>
@@ -1179,22 +1190,6 @@ Research topics of interest include, but are not limited to:</p>
 			</div>
 		</div>
 </section>
-	<div class="contact-info" id="contactinfo" role="region" aria-label="Contact Info">
-				<div class="section-overlay-layer">
-			<div class="container">
-				<div class="row contact-links">
-													<div class="col-sm-4 contact-link-box col-xs-12" data-scrollreveal="enter top after 0.15s over 1s" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
-																				<div class="icon-container"><i class="fas fa-envelope"></i></div>
-																				<a href="mailto:events@oii.ox.ac.uk" class="strong">EMAIL TBA</a>
-																		</div>
-																<div class="col-sm-4 contact-link-box col-xs-12" data-scrollreveal="enter top after 0.15s over 1s" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
-																				<div class="icon-container"><i class="fab fa-twitter"></i></div>
-																				<a href="https://twitter.com/socinformatics" class="strong">TWITTER TBA</a>
-																		</div>
-												</div><!-- .contact-links -->
-			</div><!-- .container -->
-		</div>
-			</div><!-- .contact-info -->
 	
 		</div><!-- .content-wrap -->
 		<footer itemscope="" itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class="footer grey-bg">
@@ -1207,17 +1202,34 @@ Research topics of interest include, but are not limited to:</p>
 			<div itemscope="" role="navigation" itemtype="http://schema.org/SiteNavigationElement" id="menu-secondary" aria-label="Secondary Menu">
 				<h2 class="screen-reader-text">Secondary Menu</h2>
 				<ul id="menu-main-menu-1" class="footer-links small-text"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#parallax_header"><i></i></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-53"><a href="#about">About</a></li>
-<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"><a >Programme</a></li> -->
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-55"><a href="#team">Keynotes</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-58"><a href="#customers">Organizers</a></li>
-<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-55"><a href="#team">Workshops</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-56"><a href="#registration">Registration & Visa</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-117"><a href="#venue">Venue &amp; Accommodation</a></li>
-</ul>			</div>
+	
+									<ul id="menu-main-menu" class="primary-menu small-text">
+										<li class="menu-item menu-item-type-custom menu-item-object-custom"<a href="#parallax_header"><i></i></a></li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#about">About</a>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#calls">Calls for participation</a>
+										</li>
+										<li class="menu-item menu-item-home"><a href="#keynotes">Keynotes</a></li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#program">Program</a>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#organizers">Organizers</a>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#registration-visa">Registration & Visa</a>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#venue-accommodation">Venue & Accommodation</a>
+										</li>
+									</ul>
+</div>
 
-								<ul class="social-icons">
-											</ul>
+<!-- 								<ul class="social-icons">
+									<li><i class="fab fa-facebook"></i></li>
+											</ul> -->
 						</div><!-- .footer-bottom-wrap -->
 </footer>
 
