@@ -8009,3 +8009,17 @@ p.edd-alert-error,
 	float: right;
 }
 
+
+
+
+
+
+
+
+
+/*Dropdowns*/
+
+.sticky-navigation .main-navigation ul.dropdown-menu li a {
+	margin: 0;
+}
+

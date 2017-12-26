@@ -16,7 +16,7 @@
     <script type="text/javascript" src="./public/jquery-migrate.min.js"></script>
     <link rel="stylesheet" id="ub_global_footer_style-css" href="./public/main.css" type="text/css" media="all">
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    
+
 	<link rel="apple-touch-icon" sizes="57x57" href="public/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="public/favicons/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="public/favicons/apple-icon-72x72.png">
@@ -83,14 +83,59 @@
 						<!-- LOGO ON STICKY NAV BAR -->
 						<div id="site-header-menu" class="site-header-menu">
 							<nav id="site-navigation" class="main-navigation" role="navigation">
-							<div class="menu-main-menu-container"><ul id="menu-main-menu" class="primary-menu small-text"><li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#parallax_header"><i></i></a></li>
-<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-53"><a href="#about">About</a></li>
-<!-- <li id="menu-item-57" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"><a >Programme</a></li> -->
-<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-55"><a href="#team">Keynotes</a></li>
-<li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-58"><a href="#customers">Organizers</a></li>
-<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-56"><a href="#registration">Registration & Visa</a></li>
-<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-117"><a href="#venue">Venue &amp; Accommodation</a></li>
-</ul></div>							</nav>
+								<div class="menu-main-menu-container">
+									<ul id="menu-main-menu" class="primary-menu small-text"><li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#parallax_header"><i></i></a></li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#about">About <i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#mission">Mission</a></li>
+												<li><a href="#sponsors">Sponsors</a></li>
+												<li><a href="#dates">Important dates</a></li>
+											</ul>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#calls">Calls for participation <i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#call-for-papers">Call for papers</a></li>
+												<li><a href="#call-for-workshops">Call for workshops</a></li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-home"><a href="#keynotes">Keynotes</a></li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#program">Program <i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#at-glance">Program at a glance</a></li>
+												<li><a href="#abstracts">Abstracts</a></li>
+												<li><a href="#workshop-descriptions">Workshop descriptions</a></li>
+											</ul>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#organizers">Organizers <i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#organizing-committee">Organizing committee</a></li>
+												<li><a href="#program-committee">Program committee</a></li>
+												<li><a href="#about-hse">About HSE</a></li>
+											</ul>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#registration-visa">Registration & Visa<i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#registration">Registration fees & times</a></li>
+												<li><a href="#visa">Getting Russian visa</a></li>
+											</ul>
+										</li>
+										<li class="dropdown menu-item menu-item-home">
+											<a href="#venue-accommodation">Venue & Accommodation <i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+												<li><a href="#workshop-venue">Workshop venue</a></li>
+												<li><a href="#main-conference-venue">Main conference venue</a></li>
+												<li><a href="#accommodation">Accommodation</a></li>
+											</ul>
+										</li>
+
+									</ul>
+								</div>
+							</nav>
 						</div>
 					</div>
 
@@ -113,7 +158,7 @@
 											<div id="intro-section" class="intro-section">
 
 							<!-- WELCOM MESSAGE -->
-							<h2 id="intro_section_text_1" class="intro white-text">Social Informatics 2018</h2><h5 id="intro_section_text_2" class="white-text">September 25-28, 2018<br> Siant Petersburg, Russia <br>Organized by the Laboratory for Insternet Studies <br> Higher School of Economics</h5>
+							<h2 id="intro_section_text_1" class="intro white-text">Social Informatics 2018</h2><h5 id="intro_section_text_2" class="white-text">September 25-28, 2018<br>Saint Petersburg, Russia <br>Organized by the Laboratory for Insternet Studies <br> Higher School of Economics</h5>
 							<!-- BUTTON -->
 							<button class="btn btn-primary standard-button inpage-scroll inpage_scroll_btn">
 									Call for papers
@@ -141,70 +186,7 @@
 	<!-- /END HOME / HEADER  -->
 	
 		<div itemprop="" id="content" class="content-warp" role="main">
-		
-<!-- 	<div class="clients white-bg" id="clients" role="region" aria-label=" Affiliates Logos">
-				<div class="container">
-			<ul class="client-logos" data-scrollreveal="enter top over 1.5s after 1s" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
-										<li>
-										<a href="#team" title="">
-										<img src="./public/people/Harith_Alani.png" alt="Logo">
-									</a>
-													</li>
-											<li>
-																<a href="#team" title="">
-										<img src="./public/people/Ingmar_Weber.jpg" alt="Logo">
-									</a>
-													</li>
-											<li>
-																<a href="#team" title="">
-										<img src="./public/people/Jonathan_Zhu.jpg" alt="Logo">
-									</a>
-								</ul>
-		</div>
-			</div> -->
-		
-<!-- 	<section class="services" id="services" role="region" aria-label="Services">
-				<div class="section-overlay-layer">
-			<div class="container">
 
-				<div class="section-header">
-									</div>
-
-									<div id="our_services_wrap" class="services-wrap our_services_wrap_piterest parallax_one_grid parallax_one_grid_vpSHOrwf3f"><div class="parallax_one_grid_col_3 parallax_one_grid_column_1 parallax_one_grid_first "><div class="service-box" data-scrollreveal="enter left after 0.15s over 1s" parallax_onegrid-attr="this-0" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
-																		<div class="single-service border-bottom-hover">
-																								<div class="service-icon colored-text">
-															<a href="#team">
-																<span class="fa icon-speech-streamline-talk-user"></span>
-															</a>
-														</div>
-																									<h3 class="colored-text">
-													<a href="#team">Keynote Speakers</a>
-												</h3>
-																				</div>
-																	</div></div><div class="parallax_one_grid_col_3 parallax_one_grid_column_2  "><div class="service-box" data-scrollreveal="enter left after 0.15s over 1s" parallax_onegrid-attr="this-1" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
-																		<div class="single-service border-bottom-hover">
-																								<div class="service-icon colored-text">
-															<span class="fa fa-calendar"></span>
-														</div>
-																									<h3 class="colored-text">Date &amp; Venue</h3>
-																						<p>13-15 September 2017<br> Wolfson College, Oxford, UK</p>
-																			</div>
-																	</div></div><div class="parallax_one_grid_col_3 parallax_one_grid_column_3 parallax_one_grid_last "><div class="service-box" data-scrollreveal="enter left after 0.15s over 1s" parallax_onegrid-attr="this-2" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
-																		<div class="single-service border-bottom-hover">
-																								<div class="service-icon colored-text">
-															<a href="https://twitter.com/socinformatics">
-																<span class="fa icon-social-twitter"></span>
-															</a>
-														</div>
-																									<h3 class="colored-text">
-													<a href="https://twitter.com/socinformatics">Follow Us!</a>
-												</h3>
-																				</div>
-																	</div></div></div>
-							</div>
-		</div>
-			</section>
- -->
  <section class="section-custom section-bordered about" id="about" role="region" aria-label="about">
 	<div class="section-overlay-layer">
 		<div class="container">
@@ -213,10 +195,55 @@
 			</div>
 			<div class="row">				
 				<div class="col-md-12 content-section">
-					<h3>Important dates</h3>
+					<h3 id="mission">Mission</h3>
+					<p>
+						We are delighted to welcome the 10th International Conference on Social Informatics (SocInfo 2018) to St.Petersburg, Russia, On September 24-27, 2018.
+					</p>
+					<p>
+						SocInfo is an interdisciplinary venue for researchers from Computer Science, Informatics, Social Sciences and Management Sciences to share ideas and opinions, and present original research work on studying the interplay between socially-centric platforms and social phenomena.
+The ultimate goal of Social Informatics is to create better understanding of socially-centric platforms not just as a technology, but also as a set of social phenomena. To that end, we are inviting interdisciplinary papers, on applying information technology in the study of social phenomena, on applying social concepts in the design of information systems, on applying methods from the social sciences in the study of social computing and information systems, on applying computational algorithms to facilitate the study of social systems and human social dynamics, and on designing information and communication technologies that consider social context.
+					</p>
+
+					<h3 id="sponsors">Sponsors</h3>
+						<a href="http://dsp.acm.org/" target="_blank" rel="noopener"><img src="public/acm-300x105.png" alt="" width="213" height="74" ></a>
+						<a href="http://www.springer.com/gb/" target="_blank" rel="noopener"><img src="public/1280px-Springer.svg_-300x83.png" width="213" height="59"></a>
+					<h3 id="dates">Important dates</h3>
+
+					<div class="row">
+						<div class="col-md-6">
+							<h4>April 9, 2018</h4>
+							<p>Workshop proposal submission deadline.</p>
+
+							<h4>April 30, 2018</h4>
+							<p>Workshop acceptance notification.</p>
+
+							<h4>May 9, 2018</h4>
+							<p>Full paper & short paper submission deadline.</p>
+
+							<h4>June 19, 2018</h4>
+							<p>Notification of acceptance.</p>
+
+
+						</div>
+						<div class="col-md-6">
+							<h4>July 24, 2018</h4>
+							<p>Camera-ready version.</p>
+							<p>Early-bird registration.</p>
+							<p>Cut-off registration.</p>
+
+							<h4>September 10, 2018</h4>
+							<p>Late registration.</p>
+
+							<h4>September 25, 2018</h4>
+							<p>Workshop day.</p>
+
+							<h4>September 26-28, 2018</h4>
+							<p>Main conference dates.</p>
+						</div>
+					</div>
 
 					<!-- https://codepen.io/jasondavis/pen/fDGdK -->
-					<div class="container">
+					<!-- div class="container">
 
 					    <ul class="timeline">
 					        <li>
@@ -292,7 +319,7 @@
 					          </div>
 					        </li>
 					    </ul>
-					</div>
+					</div> -->
 				</div>
 				<div>
 					<p><em><strong>All the deadlines are at 23:59 <a href="https://www.timeanddate.com/worldclock/usa/honolulu" target="_blank" rel="noopener">Hawaii Time</a>.</strong></em></p>
@@ -323,46 +350,48 @@
 		</div>
 	</div>
 </section>
-<section class="section-custom section-bordered call-for-papers" id="call-for-papers" role="region" aria-label="call-for-papers">
+<section class="section-custom section-bordered call-for-papers" id="calls" role="region">
 	<div class="section-overlay-layer">
 		<div class="container">
 			<div class="section-header text-left">
-				<h2 class="text-left dark-text"></h2><h2>Call for papers</h2><div class="colored-line-left"></div>
+				<h2 class="text-left dark-text">Calls for participation</h2>
+				<div class="colored-line-left"></div>
 			</div>
-			<div class="row">				
+			<div class="row">
+			<h3 id="call-for-papers">Call for papers</h3>
 				<div class="col-md-6 content-section">
 					<p>The International Conference on Social Informatics (SocInfo18) is an interdisciplinary venue that brings together researchers from the computational and social sciences interested in joint research of socio-technical phenomena. The goal of the conference is to provide a forum to help scholars from the two disciplines define common research objectives and explore methodologies. The organizers welcome a broad range of contributions, from those that apply methods from the social sciences to the study of socio-technical systems, to the application of computational methods to the study of complex social processes and the use of social concepts in the design of information systems.</p>
 					<p>SocInfo18 offers an opportunity for the dissemination of knowledge between the two communities by soliciting presentations of original research papers and experience-based case studies in computer science, sociology, psychology, political science, public health, media & communication studies, economics, linguistics, artificial intelligence, social network analysis, and other disciplines that can shed light on the open questions in the growing field of computational social science.</p>
 					<p>SocInfo18 will also offer workshops and keynote talks that will be tailored to enhance the collaboration between the two research cultures in an era when social interactions are ubiquitous and span offline, online and augmented reality worlds.
 Research topics of interest include, but are not limited to:</p>
-<ul>
-	<li>New theories, methods and objectives in computational social science</li>
-	<li>Computational models of social phenomena, including behavior modeling</li>
-	<li>Dynamics of social collaborative systems and collective intelligence</li>
-	<li>Social network analysis and mining</li>
-	<li>Mining big social data</li>
-	<li>Web mining and its social interpretations</li>
-	<li>Quantifying offline phenomena through online data</li>
-	<li>Forecasting of social phenomena with digital traces</li>
-	<li>Social influence and social contagion</li>
-	<li>Security, privacy, trust, reputation, and incentive issues</li>
-	<li>Opinion mining and social media analytics</li>
-	<li>News production & consumption in the Internet era</li>
-	<li>Credibility of online content</li>
-	<li>Tracing and preventing of harmful content and risk events</li>
-	<li>Health informatics</li>
-	<li>Social media and health behaviors</li>
-	<li>Equity in social and information systems</li>
-	<li>Social applications of the semantic Web</li>
-	<li>Social psychology and personality in the era of new ICTs & Internet</li>
-	<li>Virtual reality for psychological research</li>
-	<li>Virtual communities</li>
-	<li>Game studies</li>
-	<li>Human-computer interaction</li>
-	<li>Urban informatics</li>
-	<li>Social implications of geoinformation systems</li>
-	<li>Socio-economic systems and applications</li>
-</ul>
+					<ul>
+						<li>New theories, methods and objectives in computational social science</li>
+						<li>Computational models of social phenomena, including behavior modeling</li>
+						<li>Dynamics of social collaborative systems and collective intelligence</li>
+						<li>Social network analysis and mining</li>
+						<li>Mining big social data</li>
+						<li>Web mining and its social interpretations</li>
+						<li>Quantifying offline phenomena through online data</li>
+						<li>Forecasting of social phenomena with digital traces</li>
+						<li>Social influence and social contagion</li>
+						<li>Security, privacy, trust, reputation, and incentive issues</li>
+						<li>Opinion mining and social media analytics</li>
+						<li>News production & consumption in the Internet era</li>
+						<li>Credibility of online content</li>
+						<li>Tracing and preventing of harmful content and risk events</li>
+						<li>Health informatics</li>
+						<li>Social media and health behaviors</li>
+						<li>Equity in social and information systems</li>
+						<li>Social applications of the semantic Web</li>
+						<li>Social psychology and personality in the era of new ICTs & Internet</li>
+						<li>Virtual reality for psychological research</li>
+						<li>Virtual communities</li>
+						<li>Game studies</li>
+						<li>Human-computer interaction</li>
+						<li>Urban informatics</li>
+						<li>Social implications of geoinformation systems</li>
+						<li>Socio-economic systems and applications</li>
+					</ul>
 
 				</div>
 				<div class="col-md-6 content-section">
@@ -372,25 +401,60 @@ Research topics of interest include, but are not limited to:</p>
 						<li>Full papers: should not exceed 14 pages (excluding references and any appendix)</li>
 						<li>Short papers: should not exceed 8 pages (excluding references and any appendix)</li>
 					</ul>
-<p>Submissions will be reviewed through a double-blind review process. To ensure a thorough and fair review process, this year’s conference will apply strict review guidelines to provide even higher-quality feedback to authors. To further incentivize useful and detailed feedback to authors, contributions of best reviewers will be rewarded with special mentions.</p>
-<p>As in previous years, accepted papers will appear in <a href="http://www.springer.com/gb/computer-science/lncs" target="_blank">Springer’s Lecture Note Series in Computer Science</a>. We will also allow accepted papers to be presented without publication in the conference proceedings, if the authors choose to do so. Some of the full paper submissions may be accepted as short papers after review by the Program Committee. A small set of particularly high quality and important papers will be selected for journal publication.</p>
+					<p>Submissions will be reviewed through a double-blind review process. To ensure a thorough and fair review process, this year’s conference will apply strict review guidelines to provide even higher-quality feedback to authors. To further incentivize useful and detailed feedback to authors, contributions of best reviewers will be rewarded with special mentions.</p>
+					<p>As in previous years, accepted papers will appear in <a href="http://www.springer.com/gb/computer-science/lncs" target="_blank">Springer’s Lecture Note Series in Computer Science</a>. We will also allow accepted papers to be presented without publication in the conference proceedings, if the authors choose to do so. Some of the full paper submissions may be accepted as short papers after review by the Program Committee. A small set of particularly high quality and important papers will be selected for journal publication.</p>
 
-<h3>Submission Procedures</h3>
-<p>Original manuscripts should be submitted in English in pdf format through&nbsp;<span style="font-weight: 400"><a href="https://easychair.org/conferences/?conf=socinfo2018" target="_blank">EasyChair</a>. </span></p>
-<ul>
-	<li>The submission deadline is May 9, 2018 23:59, Hawaii Time.</li>
-	<li>Notification of acceptance: June 19, 2018.</li>
-	<li>Camera ready: July 24, 2018 (at least one paper author should register by that time for the paper to be published).</li>
-</ul>
-<p>Because SocInfo will publish proceedings, manuscripts should be formatted according to Springer LNCS paper&nbsp;<a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0" target="_blank">formatting guidelines</a>.</p>
-<p>&nbsp;</p>
+					<h3>Submission Procedures</h3>
+					<p>Original manuscripts should be submitted in English in pdf format through&nbsp;<span style="font-weight: 400"><a href="https://easychair.org/conferences/?conf=socinfo2018" target="_blank">EasyChair</a>. </span></p>
+					<ul>
+						<li>The submission deadline is May 9, 2018 23:59, Hawaii Time.</li>
+						<li>Notification of acceptance: June 19, 2018.</li>
+						<li>Camera ready: July 24, 2018 (at least one paper author should register by that time for the paper to be published).</li>
+					</ul>
+					<p>Because SocInfo will publish proceedings, manuscripts should be formatted according to Springer LNCS paper&nbsp;<a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0" target="_blank">formatting guidelines</a>.</p>
+					<p>&nbsp;</p>
 				</div>
-						</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 id="call-for-workshops">Call for workshops</h3>
+					<p>The SocInfo’18  Committee invites proposals for Workshops Day of the conference. All workshops will be held on Tuesday, September 24, 2018, at 123 Kanal Griboyedova Emb, St. Petersburg (which is not the venue of the main conference).</p>
+					<p>The preferred formats are group discussions and practical tutorials.  A tutorial should provide either an in depth look at an emerging technique or software package or a broad summary of an important direction in the field of social informatics, preferably with a practical training. A group discussion should provide an opportunity to informally discuss issues with a selected focus, especially conceptual, methodological or practical  difficulties of social informatics, as opposed to presenting final results. Workshops should not be structured as mini-conferences dominated by long talks and short discussions. Instead, the organizers are encouraged to promote different types of activities including games, brainstorming and networking sessions. All workshops should be interactive and involve between 15 and 40 members. Finally, the workshops should have the potential to attract the interest of researchers in computer science and social sciences, and possibly developers and practitioners.</p>
+					<h4>Proposal content</h4>
+					Proposals for workshops should be between 2 and 5 pages in length (10pt, single column, with reasonable margins), written in English, and should contain the following:
+					<ul>
+						<li>A concise title.</li>
+						<li>The names, affiliations and contact information of the organizers. A typical workshop should count no more than three co-chairs affiliated with different organizations.</li>
+						<li>Proposed duration of the workshop – half or full day.</li>
+						<li>A statement of the workshop: objective/goals.</li>
+						<li>A statement detailing: Why is the workshop topic important? Why is the workshop timely? How is it relevant to social informatics?</li>
+						<li>A two-paragraph description of the workshop topic and themes.</li>
+						<li>If the workshop was conducted before, where and when was it conducted? Please give details on number of attendees, and acceptance ration (if applicable).</li>
+						<li>A description of the workshop format and list of proposed activities.</li>
+						<li>An indication of the maximum number of participants  and a description of how workshop submissions will be selected : by the time of registration, by some predefined criteria or else.</li>
+						<li>A short bio of the workshop organizers, including a description of their qualifications relative to the topic area, and past experience in organizing/facilitating workshops or research meetings.</li>
+					</ul>
+					<h4>Proposal review</h4>
+					<p>The workshop  chairs will review each submission and select those with the highest scores on originality, timeliness and relevance of the proposed topic, its interdisciplinarity, and coherence with the conference aims.</p>
+					<h4>Important Dates</h4>
+					<ul>
+						<p>(ALL DEADLINES ARE ON 23:59:59 HAWAII STANDARD TIME)</p>
+						<li>Workshop proposal submission deadline: April 9, 2018</li>
+						<li>Workshop acceptance notification: April 30, 2018</li>
+					</ul>
+					<h4>Workshop Chairs:</h4>
+					<ul>
+						<li>Luca Maria Ayello, Bell Labs, UK (?)</li>
+						<li>Sergei Koltcov, HSE, Russia</li>
+					</ul>
+					<p>Submission E-mail: TODO</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="keynotes" id="team" role="region" aria-label="Team">
+<section class="keynotes" id="keynotes" role="region">
 	<div class="section-overlay-layer">
 		<div class="container">
 			<div class="section-header">
@@ -547,29 +611,27 @@ Research topics of interest include, but are not limited to:</p>
 	</div>
 </section>
 
-<!-- #section9 -->
-<!-- 	<section class="call-to-action ribbon-wrap" id="ribbon" style="background-image:url(http://blogs.oii.ox.ac.uk/socinfo2017/wp-content/uploads/sites/83/2017/04/Screen-Shot-2017-04-29-at-17.34.35.png);" role="region" aria-label="Ribbon">	<div class="section-overlay-layer">
+<section class="program" id="program">
+	<div class="section-overlay-layer">
 		<div class="container">
+			<div class="section-header text-left">
+				<h2 class="text-left dark-text">Programme</h2>
+				<div class="colored-line-left"></div>
+			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-
-											<h2 class="white-text strong" data-scrollreveal="enter top after 0.15s over 1s" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
-							Support SocInfo2017!						</h2>
-											<button onclick="parent.location=&#39;http://blogs.oii.ox.ac.uk/socinfo2017/wp-content/uploads/sites/83/2017/04/Social-Informatics-Sponsorship.pdf&#39;" data-anchor="" class="btn btn-primary standard-button inpage-scroll inpage_scroll_btn" data-scrollreveal="enter bottom after 0.15s over 1s" style="-webkit-transform: translatey(25px);-moz-transform: translatey(25px);transform: translatey(25px);opacity: 0;" data-sr-init="true">
-							<span class="screen-reader-text">Header button label:Sponsorship Brochure</span>
-							Sponsorship Brochure 						</button>
-						
+				<div class="col-md-12">
+					<p>TBA</p>
 				</div>
 			</div>
 		</div>
 	</div>
-		</section>
- -->				
- <section class="testimonials" id="customers" role="region" aria-label="Testimonials">
+</section>
+
+ <section class="testimonials" id="organizers">
 	<div class="section-overlay-layer">
 		<div class="container">
 			<div class="section-header">
-				<h2 class="dark-text">Organizing Committee</h2>
+				<h2 id="organizing-committee" class="dark-text">Organizing Committee</h2>
 				<div class="colored-line"></div>
 			</div>
 			<div id="happy_customers_wrap" class="testimonials-wrap happy_customers_wrap_piterest parallax_one_grid">
@@ -601,7 +663,7 @@ Research topics of interest include, but are not limited to:</p>
 							<div class="feedback-text-wrap">
 								<h5 class="colored-text">Luca Maria Aiello</h5>
 								<div class="small-text">Bell Labs, UK</div>
-								<p>???
+								<p>Workshop chair
 									<br>
 									<a href="mailto:luca.aiello@nokia.com">luca.aiello@nokia.com</a>
 								</p>
@@ -655,7 +717,7 @@ Research topics of interest include, but are not limited to:</p>
 							<div class="feedback-text-wrap">
 								<h5 class="colored-text">Sergei Koltcov</h5>
 								<div class="small-text">HSE, Russia</div>
-								<p>Organization chair
+								<p>Organization chair, Workshop chair
 									<br>
 									<a href="mailto:skoltsov@hse.ru">skoltsov@hse.ru</a>
 								</p>
@@ -739,6 +801,266 @@ Research topics of interest include, but are not limited to:</p>
 	</div>
 </section><!-- customers -->
 
+<section class="section-custom section-bordered programme-committee" id="program-committee" role="region">
+	<div class="section-overlay-layer">
+		<div class="container">
+			<div class="section-header text-left">
+				<h2 class="text-left dark-text"></h2><h2>Programme Committee</h2><div class="colored-line-left"></div>
+			</div>
+			<div class="row">				
+				<div class="col-md-6 content-section">
+					<p>Palakorn Achananuparp, Singapore Management University<br>
+					Eytan Adar, University of Washington<br>
+					Thomas Ågotnes, University of Bergen<br>
+					Luca Maria Aiello, Bell Labs<br>
+					Harith Alani, The Open University<br>
+					Merve Alanyali, University of Warwick<br>
+					Laura Alessandretti, City University of London<br>
+					Fred Amblard, University Toulouse<br>
+					Stuart Anderson, University of Edinburgh<br>
+					Pablo Aragón, Universitat Pompeu Fabra<br>
+					Alex Arenas, URV<br>
+					Yasuhito Asano, Kyoto University<br>
+					Ching Man Au Yeung, Axon Labs Ltd.<br>
+					Francois Bar, USC – Annenberg School<br>
+					Vladimir Barash, Graphika Inc.<br>
+					Alain Barrat, CNRS<br>
+					Dominik Batorski, University of Warsaw<br>
+					Ginestra Bianconi, Queen Mary University<br>
+					Livio Bioglio, University of Turin<br>
+					Arnim Bleier, GESIS-Leibniz Institute for the Social Sciences<br>
+					Javier Borge-Holthoefer, Internet Interdisciplinary Institute (IN3-UOC)<br>
+					Ulrik Brandes, University of Konstanz<br>
+					Colin Campbell, Washington College<br>
+					Nan Cao, IBM T.J. Watson Research Center<br>
+					Adrián Carro, University of Oxford<br>
+					Claudio Castellano, Istituto dei Sistemi Complessi (ISC-CNR)<br>
+					Michael Castelle, University of Chicago<br>
+					James Caverlee, Texas A&amp;M University<br>
+					Fabio Celli, University of Trento<br>
+					Nina Cesare, University of Washington<br>
+					Meeyoung Cha, KAIST &amp; Facebook<br>
+					Freddy Chong Tat Chua, Hewlett Packard Labs<br>
+					David Corney, Signal Media<br>
+					Michele Coscia, Harvard University<br>
+					Andrew Crooks, George Mason University<br>
+					Manlio De Domenico, Universitat Rovira i Virgili<br>
+					Jean-Charles Delvenne, University of Louvain<br>
+					Bruce Desmarais, Pennsylvania State University<br>
+					Jana Diesner, University of Illinois at Urbana-Champaign<br>
+					Victor M Eguiluz, IFISC (CSIC-UIB)<br>
+					Young-Ho Eom, University of Strathclyde<br>
+					Tim Evans, Imperial College London<br>
+					Katayoun Farrahi, Goldsmiths, University of London<br>
+					Rosta Farzan, University of Pittsburgh<br>
+					Seth Frey, Dartmouth College<br>
+					Vanessa Frias-Martinez, University of Maryland<br>
+					Diego Fregolente Mendes de Oliveira, &nbsp;Indiana &nbsp;University<br>
+					Gerhard Fuchs, University of Stuttgart<br>
+					Matteo Gagliolo, Université libre de Bruxelles<br>
+					Bharath Ganesh, University of Oxford<br>
+					David Garcia, ETH Zurich<br>
+					Ruth Garcia Gavilanes, Skyscanner<br>
+					Manuel Garcia-Herranz, UNICEF<br>
+					Floriana Gargiulo, CNRS and University of Paris Sorbonne<br>
+					Carlos Gershenson, UNAM<br>
+					James Gleeson, University of Limerick<br>
+					Kwang-Il Goh, Korea University<br>
+					Jennifer Golbeck, University of Maryland, College Park<br>
+					Andreea Gorbatai, UC Berkeley<br>
+					Przemyslaw Grabowicz, Max Planck Institute for Software Systems (MPI-SWS)<br>
+					André Grow, KU Leuven<br>
+					Christophe Guéret, Accenture<br>
+					Scott Hale, University of Oxford<br>
+					Alex Hanna, University of Toronto<br>
+					Tim Hannigan, University of Alberta<br>
+					Mohammed Hasanuzzaman, ADAPT Centre, Dublin<br>
+					Takako Hashimoto, Chiba University of Commerce<br>
+					Laurent Hébert-Dufresne, Santa Fe Institute<br>
+					Agnes Horvat, Northwestern University<br>
+					Yuheng Hu, University of Illinois at Chicago<br>
+					Baden Hughes, Glentworth Consulting<br>
+					Adam Jatowt, Kyoto University<br>
+					Marco Alberto Javarone, University of Hertfordshire<br>
+					Mark Jelasity, University of Szeged<br>
+					Pablo Jensen, ENS Lyon<br>
+					Hang-Hyun Jo, Pohang University of Science and Technology<br>
+					Andreas Kaltenbrunner, Eurecat – Tecnology Centre of Catalonia<br>
+					Fariba Karimi, GESIS-Leibniz Institute for the Social Sciences<br>
+					Kazuhiro Kazama, Wakayama University<br>
+					Przemysław Kazienko, Wroclaw University of Technology<br>
+					Pan-Jun Kim, Korea Advanced Institute of Science and Technology<br>
+					Katharina Kinder-Kurlanda, GESIS Leibniz Institute for the Social Sciences<br>
+					Mikko Kivela, Aalto University<br>
+					Adam Kleinbaum, Tuck School of Business at Dartmouth<br>
+					Andreas Koch, University of Salzburg<br>
+					Farshad Kooti, Facebook<br>
+					Renaud Lambiotte, University of Namur<br>
+					Walter Lamendola, University of Denver<br>
+					David Laniado, Eurecat<br>
+					Georgios Lappas, Western Macedonia University of Applied Sciences<br>
+					Sang Hoon Lee, Korea Institute for Advanced Study<br>
+					Deok-Sun Lee, Inha University<br>
+					Juyong Lee, National Institutes of Health<br>
+					Wonjae Lee, KAIST<br>
+					Sune Lehmann, Technical University of Denmark<br>
+					Akoglu Leman, CMU<br>
+					Zoran Levnajic, Faculty of Information Studies in Novo mesto<br>
+					Elisabeth Lex, Graz University of Technology<br>
+					Vera Liao, University of Illinois at Urbana-Champaign<br>
+					David Liben-Nowell, Carleton College<br>
+					Ee-Peng Lim, Singapore Management University<br>
+					Yu-Ru Lin, University of Pittsburgh<br>
+					Yabing Liu, Northeastern University<br>
+					Huan Liu, Arizona State University<br>
+					Jiebo Luo, University of Rochester<br>
+					Mark Lutter, Max Planck Institute for the Study of Societies<br>
+					Xiao Ma, Cornell Tech<br>
+					Matteo Magnani, Uppsala University<br>
+					Rosario Mantegna, Universita’ di Palermo<br>
+					Michael Mäs, ETH Zurich</p>
+				</div>
+				<div class="col-md-6 content-section">
+					<p>Emanuele Massaro, EPFL<br>
+					Naoki Masuda, University of Bristol<br>
+					Julian Mcauley, UC San Diego<br>
+					Peter McMahan, University of Chicago<br>
+					Yelena Mejova, Qatar Computing Research Institute<br>
+					Rosa Meo, University of Torino<br>
+					Stasa Milojevic, Indiana University<br>
+					Marija Mitrovic, Institute of physics Belgrade<br>
+					Asako Miura, Kwansei Gakuin University<br>
+					Hisashi Miyamori, Kyoto Sangyo University<br>
+					Suzy Moat, University of Warwick<br>
+					John Mohr, University of California, Santa Barbara<br>
+					Jose Moreno, IRIT/UPS<br>
+					Tsuyoshi Murata, Tokyo Institute of Technology<br>
+					Mirco Musolesi, University College London<br>
+					Shinsuke Nakajima, Kyoto Sangyo University<br>
+					Keiichi Nakata, University of Reading<br>
+					Mirco Nanni, KDD-Lab ISTI-CNR Pisa<br>
+					Dong Nguyen, Alan Turing Institute<br>
+					Finn Årup Nielsen, Technical University of Denmark<br>
+					Laura Noren, NYU<br>
+					Carlos Nunes Silva, University of Lisbon<br>
+					Jason Nurse, University of Oxford<br>
+					Katherine Ognyanova, Rutgers University<br>
+					Nuria Oliver, Vodafone Research<br>
+					Anne-Marie Oostveen, University of Oxford<br>
+					Daniela Paolotti, ISI Foundation<br>
+					Mario Paolucci, Institute of Cognitive Sciences and Technologies<br>
+					Symeon Papadopoulos, Information Technologies Institute<br>
+					Luca Pappalardo, University of Pisa<br>
+					Patrick Park, Northwestern University<br>
+					Jaimie Park, KAIST<br>
+					Leto Peel, Universite catholique de Louvain<br>
+					Konstantinos Pelechrinis, University of Pittsburgh<br>
+					Orion Penner, École polytechnique fédérale de Lausanne<br>
+					Matjaz Perc, University of Maribor<br>
+					María Pereda, Universidad Carlos III de Madrid<br>
+					Nicola Perra, University of Greenwich<br>
+					Alexander Petersen, University of California Merced<br>
+					Georgios Petkos, University of Macedonia<br>
+					Giovanni Petri, ISI Foundation<br>
+					Gregor Petrič, University of Ljubljana<br>
+					Tobias Preis, University of Warwick<br>
+					Michal Ptaszynski, Kitami Institute of Technology<br>
+					Hemant Purohit, George Mason University<br>
+					Giovanni Quattrone, Middlesex University<br>
+					Matthias R. Brust, University of Luxembourg<br>
+					Danica Radovanovic, University of Novi Sad<br>
+					Iyad Rahwan, Massachusetts Institute of Technology<br>
+					Jose J. Ramasco, IFISC (CSIC-UIB)<br>
+					Georgios Rizos, CERTH-ITI<br>
+					Alice Robbin, Indiana University<br>
+					Luca Rossi, IT University of Copenhagen<br>
+					Martin Rosvall, Umeå Univeristy<br>
+					Giancarlo Ruffo, Universita’ di Torino<br>
+					Alessandra Sala, Bell Labs Ireland<br>
+					Mostafa Salehi, University of Tehran<br>
+					Kazutoshi Sasahara, Nagoya University<br>
+					Michael Schaub, Massachusetts Institute of Technology<br>
+					Maximilian Schich, The University of Texas at Dallas<br>
+					Rossano Schifanella, University of Turin<br>
+					Harald Schoen, University of Mannheim<br>
+					Ralph Schroeder, University of Oxford<br>
+					Frank Schweitzer, ETH Zurich<br>
+					Amirhossein Shirazi, Shahid Beheshti University<br>
+					Thanakorn Sornkaew, Ramkhamheang University<br>
+					Rok Sosic, Stanford University<br>
+					Viktoria Spaiser, University of Leeds<br>
+					Bogdan State, Stanford University<br>
+					Markus Strohmaier, University of Koblenz-Landau<br>
+					Pål Sundsøy, Telenor ASA<br>
+					Taro Takaguchi, National Institute of Information and Communications Technology<br>
+					Katsumi Tanaka, Kyoto University<br>
+					Maurizio Teli, Madeira Interactive Technologies Institute<br>
+					Xian Teng, University of Pittsburgh<br>
+					Rochelle Terman, UC Berkeley<br>
+					John Ternovski, Yale University<br>
+					Dimitrios Thilikos, National and Kapodistrian University of Athens<br>
+					Bart Thomee, Google<br>
+					Michele Tizzoni, ISI Foundation<br>
+					Klaus G. Troitzsch, University of Koblenz-Landau<br>
+					Milena Tsvetkova, University of Oxford<br>
+					Lyle Ungar, University of Pennsylvania<br>
+					Carmen Vaca Ruiz, ESPOL<br>
+					George Valkanas, University of Athens<br>
+					Onur Varol, Northeastern University<br>
+					Julita Vassileva, University of Saskatchewan<br>
+					Bertram Vidgen, University of Oxford<br>
+					Dani Villatoro, IIIA-csic<br>
+					Daniele Vilone, National Research Council of Italy<br>
+					Yana Volkovich, Appnexus<br>
+					Dylan Walker, Boston University<br>
+					Wenbo Wang, GoDaddy Inc.<br>
+					Ning Wang, University of Oxford<br>
+					Ingmar Weber, Qatar Computing Research Institute<br>
+					Xidao Wen, University of Pittsburgh<br>
+					Tim Weninger, University of Notre Dame<br>
+					Adam Wierzbicki, Polish-Japanese Institute of Information Technology<br>
+					Joss Wright, Oxford University<br>
+					Kevin S. Xu, University of Toledo<br>
+					Hayato Yamana, Waseda University<br>
+					Pu Yan, University of Oxford<br>
+					Elad Yom-Tov, Microsoft Research<br>
+					Hyejin Youn, MIT<br>
+					Burcu Yucesoy, Northeastern University<br>
+					Li Zeng, University of Washington<br>
+					Weining Zhang, University of Texas at San Antonio<br>
+					Arkaitz Zubiaga, University of Warwick</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="program" id="about-hse">
+	<div class="section-overlay-layer">
+		<div class="container">
+			<div class="section-header text-left">
+				<h2 class="text-left dark-text">About HSE</h2>
+				<div class="colored-line-left"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p>Established in early 1990s by a team of reformist academics, Higher School of Economics (HSE) has now become the leading Russia’s university in the sphere of social sciences and humanities. It is also rapidly developing in mathematics and computer science. In 2017, it was ranked number 382 in QS global ranking and included into QS “Top 50 under 50” – a rating for young Universities. According to QS subject rankings, HSE University is among Top 100 in Economics & Econometrics, Top 150 in Accounting and Finance, Top 200 in Business and Management studies.</p>
+					<p>HSE St.Petersburg campus is particularly strong in computational social science and digital humanities. It offers an MA degree in big data analysis in business & society  and a BA degree in sociology &  social informatics. The campus has extensive experience in organizing middle-size international academic events, such as <a href="http://mbi.spb.hse.ru/" target="_blank">BRICS Global Business & Innovation Conference</a>, <a href="https://spb.hse.ru/en/compecon/" target="_blank">Congress of Comparative Economics</a> and <a href="http://egc.spb.hse.ru/en/2017/" target="_blank">Education & Global Cities</a>.</p>
+				</div>
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nEDyJE99ik4?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p><a target="_blank" href="https://linis.hse.ru/">Laboratory for Internet Studies (LINIS)</a> at HSE focuses on interdisciplinary internet research with the extensive use of big data and computational methods. Established only five years ago, the lab boasts of multiple publications in top journals of the field, including Internet Research, Social Media and Society, International Journal of Communication, Journal of Information Science, Policy & Internet, American Behavioral Scientist and others. During these five years, LINIS has also hosted two international summer schools (<a href="http://wwsss17.com/" target="_blank">Websci’17</a> and <a href="http://romip.ru/russir2015/" target="_blank">RUSSIR’15</a>), organized two international conferences on social media and co-organized two more summer schools on network analysis.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
@@ -747,11 +1069,7 @@ Research topics of interest include, but are not limited to:</p>
 
 
 
-
-
-
-
-<section class="section-custom section-bordered registration" id="registration" role="region" aria-label="registration">
+<section class="section-custom section-bordered registration" id="registration-visa" role="region">
 	<div class="section-overlay-layer">
 		<div class="container">
 			<div class="section-header text-left">
@@ -759,7 +1077,7 @@ Research topics of interest include, but are not limited to:</p>
 			</div>
 			<div class="row">				
 				<div class="col-md-12 content-section">
-					<h3>Registration</h3>
+					<h3 id="registration">Registration</h3>
 					<ul>
 						<li>Student Registration: $160 (before July 24,2018)</li>
 						<li>Early and cut-off Registration: $300 (before July 24, 2018)</li>
@@ -782,7 +1100,7 @@ Research topics of interest include, but are not limited to:</p>
 			</div>
 			<div class="row">				
 				<div class="col-md-12 content-section">
-					<h3>Visa</h3>
+					<h3 id="visa">Visa</h3>
 
 					<p>In order to enter Russia most foreign nationals require a Russian Federation visa. It can take time for a visa to be issued and so it is important that the application process is begun as early as possible, but not earlier than 3 months prior an expected date of the visit. Visas are issued by the Embassies or Consulates of the Russian Federation. To find your nearest Russian Embassy or Consulate, please visit <a href="http://www.russianembassy.net/">russianembassy.net</a>.</p>
 
@@ -810,7 +1128,7 @@ Research topics of interest include, but are not limited to:</p>
 		</div>
 	</div>
 </section>
-<section class="section-custom section-bordered venue" id="venue" role="region" aria-label="venue">
+<section class="section-custom section-bordered venue" id="venue-accommodation" role="region">
 	<div class="section-overlay-layer">
 		<div class="container">
 			<div class="section-header text-left">
@@ -827,16 +1145,22 @@ Research topics of interest include, but are not limited to:</p>
 					<h4>by plane</h4>
 					<p>St. Petersburg is served by the <a href="https://www.pulkovoairport.ru/en/">Pulkovo International Airport</a>.
 					From the Pulkovo Airport terminal the city bus 13 goes to the "Moskovskaya" metro station. The bus goes every 15-20 minutes from 5.40 a.m. till 0.30 a.m The trip takes 20-25 minutes. The price is about 35₽.
-The shuttle buses K-3, K-113, K-213 also go from the Pulkovo 2 terminal to the "Moskovskaya"
-metro station. The price is 45₽.</p>
-<p>We recommend you NOT to accept the offers from taxi drivers in the arrival hall or outside the airport. These taxi are safe but unreasonably expensive.
-You can order a taxi from the following services that are on average twice as cheap as the above.
-<a href="http://4011111.ru/">Народное такси (Narodnoe Taxi)</a>: <a href="tel:+78124011111">+7 (812) 401-11-11</a>.
-<a href="http://taxovichkoff.ru/">Taxovichkoff</a>: <a href="tel:+78123330000">+7 (812) 333-00-00</a>.</p>
-					<h3>Venue</h3>
-					Conference will take place in the northern building of HSE – St.Petersburg at 3 Kantemirovskaya street. This is a newly restored building with all necessary facilities, such as quick wi-fi and large well-equipped conference halls. The building is situated in only three metro stops from the city center. To get there, view transportation information.
+					The shuttle buses K-3, K-113, K-213 also go from the Pulkovo 2 terminal to the "Moskovskaya"
+					metro station. The price is 45₽.</p>
+					<p>We recommend you NOT to accept the offers from taxi drivers in the arrival hall or outside the airport. These taxi are safe but unreasonably expensive.
+					You can order a taxi from the following services that are on average twice as cheap as the above.
+					<a href="http://4011111.ru/">Народное такси (Narodnoe Taxi)</a>: <a href="tel:+78124011111">+7 (812) 401-11-11</a>.
+					<a href="http://taxovichkoff.ru/">Taxovichkoff</a>: <a href="tel:+78123330000">+7 (812) 333-00-00</a>.</p>
+
+					<h3 id="workshop-venue">Workshop Venue</h3>
+					<p>All workshops will be held at 123 Kanal Griboyedova Emb, St. Petersburg.</p>
+					<p>	To get there, take metro to the Sadovaya (Садовая) or Spasskaya (Спасская) or Sennaya Ploshchad (Сенная площадь) Stations. Then ride a bus (49, 50 or 181), share taxi (7, 195, 212) or walk along Sadovaya St. till the bridge for 10-15 minutes. Cross the bridge and turn right.</p>
+					<iframe width="1000" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?zoom=10&q=Higher+School+of+Economics,+Department+of+Political+Science&output=embed"></iframe>
+
 					
-					<h4>Getting to the venue</h4>
+					<h3 id="main-conference-venue">Main Conference Venue</h3>
+					<p>Conference will take place in the northern building of HSE – St.Petersburg at 3 Kantemirovskaya street. This is a newly restored building with all necessary facilities, such as quick wi-fi and large well-equipped conference halls. The building is situated in only three metro stops from the city center. To get there, view transportation information.</p>
+					
 					<ul>
 						<li>To get there, take metro to the Lesnaya (Лесная) Station. Walk along Kantemirovskaya St. towards the Neva river for 15-20 minutes; the building will be on your left.</li>
 						<li>You can also take trolleybus number 31. Walk along Kantemirovskaya St. towards the Neva river for a couple of minutes until you cross Lesnoy Prospect (a very large one). Find the trolleybus stop on the right side of Kantemirovskaya. Buy a ticket when you get in. Get off on the second stop and cross Kantemirovskaya to reach the venue.</li>
@@ -848,8 +1172,8 @@ You can order a taxi from the following services that are on average twice as ch
 				</div>
 			<div class="row">
 				<div class="col-md-12 content-section">
-					<h3>Accommodation</h3>
-					TODO
+					<h3 id="accommodation">Accommodation</h3>
+					TBA
 				</div>
 			</div>
 			</div>
@@ -861,251 +1185,17 @@ You can order a taxi from the following services that are on average twice as ch
 				<div class="row contact-links">
 													<div class="col-sm-4 contact-link-box col-xs-12" data-scrollreveal="enter top after 0.15s over 1s" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
 																				<div class="icon-container"><i class="fas fa-envelope"></i></div>
-																				<a href="mailto:events@oii.ox.ac.uk" class="strong">events@oii.ox.ac.uk</a>
+																				<a href="mailto:events@oii.ox.ac.uk" class="strong">EMAIL TBA</a>
 																		</div>
 																<div class="col-sm-4 contact-link-box col-xs-12" data-scrollreveal="enter top after 0.15s over 1s" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
 																				<div class="icon-container"><i class="fab fa-twitter"></i></div>
-																				<a href="https://twitter.com/socinformatics" class="strong">Join us on Twitter</a>
+																				<a href="https://twitter.com/socinformatics" class="strong">TWITTER TBA</a>
 																		</div>
 												</div><!-- .contact-links -->
 			</div><!-- .container -->
 		</div>
 			</div><!-- .contact-info -->
-	<section class="section-custom section-bordered programme-committee" id="programme-committee" role="region" aria-label="programme-committee">
-	<div class="section-overlay-layer">
-		<div class="container">
-			<div class="section-header text-left">
-				<h2 class="text-left dark-text"></h2><h2>Programme Committee</h2><div class="colored-line-left"></div>
-			</div>
-			<div class="row">				
-							<div class="col-md-6 content-section">
-					
-<p>Palakorn Achananuparp, Singapore Management University<br>
-Eytan Adar, University of Washington<br>
-Thomas Ågotnes, University of Bergen<br>
-Luca Maria Aiello, Bell Labs<br>
-Harith Alani, The Open University<br>
-Merve Alanyali, University of Warwick<br>
-Laura Alessandretti, City University of London<br>
-Fred Amblard, University Toulouse<br>
-Stuart Anderson, University of Edinburgh<br>
-Pablo Aragón, Universitat Pompeu Fabra<br>
-Alex Arenas, URV<br>
-Yasuhito Asano, Kyoto University<br>
-Ching Man Au Yeung, Axon Labs Ltd.<br>
-Francois Bar, USC – Annenberg School<br>
-Vladimir Barash, Graphika Inc.<br>
-Alain Barrat, CNRS<br>
-Dominik Batorski, University of Warsaw<br>
-Ginestra Bianconi, Queen Mary University<br>
-Livio Bioglio, University of Turin<br>
-Arnim Bleier, GESIS-Leibniz Institute for the Social Sciences<br>
-Javier Borge-Holthoefer, Internet Interdisciplinary Institute (IN3-UOC)<br>
-Ulrik Brandes, University of Konstanz<br>
-Colin Campbell, Washington College<br>
-Nan Cao, IBM T.J. Watson Research Center<br>
-Adrián Carro, University of Oxford<br>
-Claudio Castellano, Istituto dei Sistemi Complessi (ISC-CNR)<br>
-Michael Castelle, University of Chicago<br>
-James Caverlee, Texas A&amp;M University<br>
-Fabio Celli, University of Trento<br>
-Nina Cesare, University of Washington<br>
-Meeyoung Cha, KAIST &amp; Facebook<br>
-Freddy Chong Tat Chua, Hewlett Packard Labs<br>
-David Corney, Signal Media<br>
-Michele Coscia, Harvard University<br>
-Andrew Crooks, George Mason University<br>
-Manlio De Domenico, Universitat Rovira i Virgili<br>
-Jean-Charles Delvenne, University of Louvain<br>
-Bruce Desmarais, Pennsylvania State University<br>
-Jana Diesner, University of Illinois at Urbana-Champaign<br>
-Victor M Eguiluz, IFISC (CSIC-UIB)<br>
-Young-Ho Eom, University of Strathclyde<br>
-Tim Evans, Imperial College London<br>
-Katayoun Farrahi, Goldsmiths, University of London<br>
-Rosta Farzan, University of Pittsburgh<br>
-Seth Frey, Dartmouth College<br>
-Vanessa Frias-Martinez, University of Maryland<br>
-Diego Fregolente Mendes de Oliveira, &nbsp;Indiana &nbsp;University<br>
-Gerhard Fuchs, University of Stuttgart<br>
-Matteo Gagliolo, Université libre de Bruxelles<br>
-Bharath Ganesh, University of Oxford<br>
-David Garcia, ETH Zurich<br>
-Ruth Garcia Gavilanes, Skyscanner<br>
-Manuel Garcia-Herranz, UNICEF<br>
-Floriana Gargiulo, CNRS and University of Paris Sorbonne<br>
-Carlos Gershenson, UNAM<br>
-James Gleeson, University of Limerick<br>
-Kwang-Il Goh, Korea University<br>
-Jennifer Golbeck, University of Maryland, College Park<br>
-Andreea Gorbatai, UC Berkeley<br>
-Przemyslaw Grabowicz, Max Planck Institute for Software Systems (MPI-SWS)<br>
-André Grow, KU Leuven<br>
-Christophe Guéret, Accenture<br>
-Scott Hale, University of Oxford<br>
-Alex Hanna, University of Toronto<br>
-Tim Hannigan, University of Alberta<br>
-Mohammed Hasanuzzaman, ADAPT Centre, Dublin<br>
-Takako Hashimoto, Chiba University of Commerce<br>
-Laurent Hébert-Dufresne, Santa Fe Institute<br>
-Agnes Horvat, Northwestern University<br>
-Yuheng Hu, University of Illinois at Chicago<br>
-Baden Hughes, Glentworth Consulting<br>
-Adam Jatowt, Kyoto University<br>
-Marco Alberto Javarone, University of Hertfordshire<br>
-Mark Jelasity, University of Szeged<br>
-Pablo Jensen, ENS Lyon<br>
-Hang-Hyun Jo, Pohang University of Science and Technology<br>
-Andreas Kaltenbrunner, Eurecat – Tecnology Centre of Catalonia<br>
-Fariba Karimi, GESIS-Leibniz Institute for the Social Sciences<br>
-Kazuhiro Kazama, Wakayama University<br>
-Przemysław Kazienko, Wroclaw University of Technology<br>
-Pan-Jun Kim, Korea Advanced Institute of Science and Technology<br>
-Katharina Kinder-Kurlanda, GESIS Leibniz Institute for the Social Sciences<br>
-Mikko Kivela, Aalto University<br>
-Adam Kleinbaum, Tuck School of Business at Dartmouth<br>
-Andreas Koch, University of Salzburg<br>
-Farshad Kooti, Facebook<br>
-Renaud Lambiotte, University of Namur<br>
-Walter Lamendola, University of Denver<br>
-David Laniado, Eurecat<br>
-Georgios Lappas, Western Macedonia University of Applied Sciences<br>
-Sang Hoon Lee, Korea Institute for Advanced Study<br>
-Deok-Sun Lee, Inha University<br>
-Juyong Lee, National Institutes of Health<br>
-Wonjae Lee, KAIST<br>
-Sune Lehmann, Technical University of Denmark<br>
-Akoglu Leman, CMU<br>
-Zoran Levnajic, Faculty of Information Studies in Novo mesto<br>
-Elisabeth Lex, Graz University of Technology<br>
-Vera Liao, University of Illinois at Urbana-Champaign<br>
-David Liben-Nowell, Carleton College<br>
-Ee-Peng Lim, Singapore Management University<br>
-Yu-Ru Lin, University of Pittsburgh<br>
-Yabing Liu, Northeastern University<br>
-Huan Liu, Arizona State University<br>
-Jiebo Luo, University of Rochester<br>
-Mark Lutter, Max Planck Institute for the Study of Societies<br>
-Xiao Ma, Cornell Tech<br>
-Matteo Magnani, Uppsala University<br>
-Rosario Mantegna, Universita’ di Palermo<br>
-Michael Mäs, ETH Zurich</p>
-				</div>
-				<div class="col-md-6 content-section">
-					<p>Emanuele Massaro, EPFL<br>
-Naoki Masuda, University of Bristol<br>
-Julian Mcauley, UC San Diego<br>
-Peter McMahan, University of Chicago<br>
-Yelena Mejova, Qatar Computing Research Institute<br>
-Rosa Meo, University of Torino<br>
-Stasa Milojevic, Indiana University<br>
-Marija Mitrovic, Institute of physics Belgrade<br>
-Asako Miura, Kwansei Gakuin University<br>
-Hisashi Miyamori, Kyoto Sangyo University<br>
-Suzy Moat, University of Warwick<br>
-John Mohr, University of California, Santa Barbara<br>
-Jose Moreno, IRIT/UPS<br>
-Tsuyoshi Murata, Tokyo Institute of Technology<br>
-Mirco Musolesi, University College London<br>
-Shinsuke Nakajima, Kyoto Sangyo University<br>
-Keiichi Nakata, University of Reading<br>
-Mirco Nanni, KDD-Lab ISTI-CNR Pisa<br>
-Dong Nguyen, Alan Turing Institute<br>
-Finn Årup Nielsen, Technical University of Denmark<br>
-Laura Noren, NYU<br>
-Carlos Nunes Silva, University of Lisbon<br>
-Jason Nurse, University of Oxford<br>
-Katherine Ognyanova, Rutgers University<br>
-Nuria Oliver, Vodafone Research<br>
-Anne-Marie Oostveen, University of Oxford<br>
-Daniela Paolotti, ISI Foundation<br>
-Mario Paolucci, Institute of Cognitive Sciences and Technologies<br>
-Symeon Papadopoulos, Information Technologies Institute<br>
-Luca Pappalardo, University of Pisa<br>
-Patrick Park, Northwestern University<br>
-Jaimie Park, KAIST<br>
-Leto Peel, Universite catholique de Louvain<br>
-Konstantinos Pelechrinis, University of Pittsburgh<br>
-Orion Penner, École polytechnique fédérale de Lausanne<br>
-Matjaz Perc, University of Maribor<br>
-María Pereda, Universidad Carlos III de Madrid<br>
-Nicola Perra, University of Greenwich<br>
-Alexander Petersen, University of California Merced<br>
-Georgios Petkos, University of Macedonia<br>
-Giovanni Petri, ISI Foundation<br>
-Gregor Petrič, University of Ljubljana<br>
-Tobias Preis, University of Warwick<br>
-Michal Ptaszynski, Kitami Institute of Technology<br>
-Hemant Purohit, George Mason University<br>
-Giovanni Quattrone, Middlesex University<br>
-Matthias R. Brust, University of Luxembourg<br>
-Danica Radovanovic, University of Novi Sad<br>
-Iyad Rahwan, Massachusetts Institute of Technology<br>
-Jose J. Ramasco, IFISC (CSIC-UIB)<br>
-Georgios Rizos, CERTH-ITI<br>
-Alice Robbin, Indiana University<br>
-Luca Rossi, IT University of Copenhagen<br>
-Martin Rosvall, Umeå Univeristy<br>
-Giancarlo Ruffo, Universita’ di Torino<br>
-Alessandra Sala, Bell Labs Ireland<br>
-Mostafa Salehi, University of Tehran<br>
-Kazutoshi Sasahara, Nagoya University<br>
-Michael Schaub, Massachusetts Institute of Technology<br>
-Maximilian Schich, The University of Texas at Dallas<br>
-Rossano Schifanella, University of Turin<br>
-Harald Schoen, University of Mannheim<br>
-Ralph Schroeder, University of Oxford<br>
-Frank Schweitzer, ETH Zurich<br>
-Amirhossein Shirazi, Shahid Beheshti University<br>
-Thanakorn Sornkaew, Ramkhamheang University<br>
-Rok Sosic, Stanford University<br>
-Viktoria Spaiser, University of Leeds<br>
-Bogdan State, Stanford University<br>
-Markus Strohmaier, University of Koblenz-Landau<br>
-Pål Sundsøy, Telenor ASA<br>
-Taro Takaguchi, National Institute of Information and Communications Technology<br>
-Katsumi Tanaka, Kyoto University<br>
-Maurizio Teli, Madeira Interactive Technologies Institute<br>
-Xian Teng, University of Pittsburgh<br>
-Rochelle Terman, UC Berkeley<br>
-John Ternovski, Yale University<br>
-Dimitrios Thilikos, National and Kapodistrian University of Athens<br>
-Bart Thomee, Google<br>
-Michele Tizzoni, ISI Foundation<br>
-Klaus G. Troitzsch, University of Koblenz-Landau<br>
-Milena Tsvetkova, University of Oxford<br>
-Lyle Ungar, University of Pennsylvania<br>
-Carmen Vaca Ruiz, ESPOL<br>
-George Valkanas, University of Athens<br>
-Onur Varol, Northeastern University<br>
-Julita Vassileva, University of Saskatchewan<br>
-Bertram Vidgen, University of Oxford<br>
-Dani Villatoro, IIIA-csic<br>
-Daniele Vilone, National Research Council of Italy<br>
-Yana Volkovich, Appnexus<br>
-Dylan Walker, Boston University<br>
-Wenbo Wang, GoDaddy Inc.<br>
-Ning Wang, University of Oxford<br>
-Ingmar Weber, Qatar Computing Research Institute<br>
-Xidao Wen, University of Pittsburgh<br>
-Tim Weninger, University of Notre Dame<br>
-Adam Wierzbicki, Polish-Japanese Institute of Information Technology<br>
-Joss Wright, Oxford University<br>
-Kevin S. Xu, University of Toledo<br>
-Hayato Yamana, Waseda University<br>
-Pu Yan, University of Oxford<br>
-Elad Yom-Tov, Microsoft Research<br>
-Hyejin Youn, MIT<br>
-Burcu Yucesoy, Northeastern University<br>
-Li Zeng, University of Washington<br>
-Weining Zhang, University of Texas at San Antonio<br>
-Arkaitz Zubiaga, University of Warwick</p>
-<p>&nbsp;</p>
-				</div>
-						</div>
-		</div>
-	</div>
-</section>
+	
 		</div><!-- .content-wrap -->
 		<footer itemscope="" itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class="footer grey-bg">
 	<div class="container">
@@ -1121,6 +1211,7 @@ Arkaitz Zubiaga, University of Warwick</p>
 <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"><a >Programme</a></li> -->
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-55"><a href="#team">Keynotes</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-58"><a href="#customers">Organizers</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-55"><a href="#team">Workshops</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-56"><a href="#registration">Registration & Visa</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-117"><a href="#venue">Venue &amp; Accommodation</a></li>
 </ul>			</div>
