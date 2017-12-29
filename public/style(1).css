@@ -2271,7 +2271,7 @@ button.control_next.fade-btn {
 -----------------------------------------*/
 
 .testimonials {
-	border-bottom: 1px solid #eaebec;
+	/*border-bottom: 1px solid #eaebec;*/
 	background-color: #fff;
 	text-align: center;
 }
