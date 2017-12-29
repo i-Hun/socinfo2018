@@ -62,7 +62,7 @@ section.section-custom {
 section#about .content-section h2:first-child,
 section#about .content-section h3:first-child,
 section#about .content-section h4:first-child {
-	margin-top: 0;
+	margin-top: 20px;
 }
 
 
