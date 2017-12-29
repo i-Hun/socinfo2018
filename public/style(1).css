@@ -7918,6 +7918,14 @@ p.edd-alert-error,
 }
 
 .client-logos a {
+	color: #666;
+}
+
+.client-logos .fa-facebook:hover {
+	color: #3b5998;
+}
+
+.client-logos .fa-envelope:hover {
 	color: #333;
 }
 
@@ -7943,4 +7951,20 @@ table, th, td {
 
 .ec {
 	margin-top: 15px;
+}
+
+#dates:hover .fa-exclamation-triangle {
+	color: red;
+}
+
+#excl-submission:hover .fa-exclamation-triangle {
+	color: red;
+}
+
+#step2:hover .fa-exclamation-triangle {
+	color: red;
+}
+
+#step3:hover .fa-exclamation-triangle {
+	color: red;
 }
