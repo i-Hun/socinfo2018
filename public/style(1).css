@@ -7920,3 +7920,11 @@ p.edd-alert-error,
 .client-logos a {
 	color: #333;
 }
+
+
+
+/*MAPS*/
+
+iframe {
+	margin-bottom: 50px;
+}
