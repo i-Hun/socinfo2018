@@ -7928,3 +7928,13 @@ p.edd-alert-error,
 iframe {
 	margin-bottom: 50px;
 }
+
+
+
+
+
+
+table, th, td {
+    border: none;
+}
+
