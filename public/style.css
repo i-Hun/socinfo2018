@@ -53,12 +53,12 @@ Text Domain:  parallax-one
 	color: #ccc;
 }
 
-section.section-bordered {
+/*section.section-bordered {
 	border-bottom: 1px solid #eaebec;
 }
 section.section-custom {
     padding-bottom: 80px;
-}
+}*/
 section#about .content-section h2:first-child,
 section#about .content-section h3:first-child,
 section#about .content-section h4:first-child {
