@@ -177,6 +177,43 @@
 
 									<!-- WELCOM MESSAGE -->
 									<h2 id="intro_section_text_1" class="intro white-text">Social Informatics 2018</h2><h5 id="intro_section_text_2" class="white-text">September 25–28, 2018<br>Saint Petersburg, Russia <br>Higher School of Economics<br>Laboratory for Insternet Studies</h5>
+						<div class="countdown">
+						  <p class="timer">
+						    <span id="days"></span> days
+						    <span id="hours"></span> hours 
+						    <span id="minutes"></span> minutes
+						    <span id="seconds"></span> and seconds
+						    till workshop proposal submission deadline.
+						  </p>
+						</div>
+
+
+
+<script src="./public/luxon.min.js"></script>
+<script>
+function countdown() {
+	var timer, days, hours, minutes, seconds;
+
+	var DateTime = luxon.DateTime;
+	var startDate = DateTime.fromObject({year: 2018, month: 4, day: 9, hour: 23, minute:59, second:59, zone: 'Pacific/Honolulu'});
+
+	timer = setInterval(calculate, 1000);
+
+	function calculate() {
+		var till = startDate.diffNow(["days", "hours", "minutes", "seconds"]).toObject()
+		if (till.minutes >= 0) {
+			document.getElementById("days").innerHTML    = till.days;
+			document.getElementById("hours").innerHTML   = till.hours;
+			document.getElementById("minutes").innerHTML = Math.round(till.minutes);
+			document.getElementById("seconds").innerHTML = Math.round(till.seconds);
+		}
+		else {
+		    	return;
+			}
+	}
+}
+countdown() 
+</script>
 									<!-- BUTTON -->
 									<a href="https://easychair.org/cfp/Socinfo2018" target="_blank" class="btn btn-primary standard-button inpage-scroll inpage_scroll_btn">
 											Call for papers
@@ -249,43 +286,6 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				<div class="row">
 					<div class="col-md-12 content-section">
 						<h3>Important dates</h3>
-						<div class="countdown">
-						  <p class="timer">
-						    <span id="days"></span> days
-						    <span id="hours"></span> hours 
-						    <span id="minutes"></span> minutes
-						    <span id="seconds"></span> and seconds
-						    till workshop proposal submission deadline.
-						  </p>
-						</div>
-
-
-
-<script src="./public/luxon.min.js"></script>
-<script>
-function countdown() {
-	var timer, days, hours, minutes, seconds;
-
-	var DateTime = luxon.DateTime;
-	var startDate = DateTime.fromObject({year: 2018, month: 4, day: 9, hour: 23, minute:59, second:59, zone: 'Pacific/Honolulu'});
-
-	timer = setInterval(calculate, 1000);
-
-	function calculate() {
-		var till = startDate.diffNow(["days", "hours", "minutes", "seconds"]).toObject()
-		if (till.minutes >= 0) {
-			document.getElementById("days").innerHTML    = till.days;
-			document.getElementById("hours").innerHTML   = till.hours;
-			document.getElementById("minutes").innerHTML = Math.round(till.minutes);
-			document.getElementById("seconds").innerHTML = Math.round(till.seconds);
-		}
-		else {
-		    	return;
-			}
-	}
-}
-countdown() 
-</script>
 					</div>
 				</div>
 				<div class="row">

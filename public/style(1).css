@@ -8023,8 +8023,11 @@ table, th, td {
 
 
 /*Timer*/
+.countdown {
+	color: white;
+}
 
-.timer span {
+.countdown span {
 	font-weight: 600;
 }
 /*Times end*/
