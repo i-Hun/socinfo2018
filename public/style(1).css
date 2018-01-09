@@ -8021,3 +8021,11 @@ table, th, td {
 /*END programme-committee*/
 
 
+
+/*Timer*/
+
+.timer span {
+	font-weight: 600;
+}
+/*Times end*/
+

@@ -249,6 +249,43 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				<div class="row">
 					<div class="col-md-12 content-section">
 						<h3>Important dates</h3>
+						<div class="countdown">
+						  <p class="timer">
+						    <span id="days"></span> days
+						    <span id="hours"></span> hours 
+						    <span id="minutes"></span> minutes
+						    <span id="seconds"></span> and seconds
+						    till workshop proposal submission deadline.
+						  </p>
+						</div>
+
+
+
+<script src="./public/luxon.min.js"></script>
+<script>
+function countdown() {
+	var timer, days, hours, minutes, seconds;
+
+	var DateTime = luxon.DateTime;
+	var startDate = DateTime.fromObject({year: 2018, month: 4, day: 9, hour: 23, minute:59, second:59, zone: 'Pacific/Honolulu'});
+
+	timer = setInterval(calculate, 1000);
+
+	function calculate() {
+		var till = startDate.diffNow(["days", "hours", "minutes", "seconds"]).toObject()
+		if (till.minutes >= 0) {
+			document.getElementById("days").innerHTML    = till.days;
+			document.getElementById("hours").innerHTML   = till.hours;
+			document.getElementById("minutes").innerHTML = Math.round(till.minutes);
+			document.getElementById("seconds").innerHTML = Math.round(till.seconds);
+		}
+		else {
+		    	return;
+			}
+	}
+}
+countdown() 
+</script>
 					</div>
 				</div>
 				<div class="row">
@@ -1133,6 +1170,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
        
 <script type="text/javascript" src="./public/main.js"></script>
 <script type="text/javascript" src="./public/bootstrap.min.js"></script>
+
 <script type="text/javascript">
 /* <![CDATA[ */
 var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
