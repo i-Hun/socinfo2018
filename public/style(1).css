@@ -7984,6 +7984,8 @@ table, th, td {
     list-style-position: outside;
     margin: 0;
     padding: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
 }
 
 .pc-member {
@@ -7991,15 +7993,15 @@ table, th, td {
 }
 
 .pc-org {
-
+	margin-bottom: 10px;
 }
 
-.pc-org:before {
+/*.pc-org:before {
     content: " — ";
-}
+}*/
 
 
-@media (max-width: 1280px) {
+@media (max-width: 720px) {
 	.programme-committee ul{
 	    -webkit-columns: 1;
 	    -moz-columns: 1;
@@ -8007,6 +8009,13 @@ table, th, td {
 	}
 }
 
+@media (min-width: 1440px) {
+	.programme-committee ul{
+	    -webkit-columns: 3;
+	    -moz-columns: 3;
+	    columns: 3;
+	}
+}
 
 
 /*END programme-committee*/
