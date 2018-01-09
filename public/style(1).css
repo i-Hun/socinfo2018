@@ -7978,31 +7978,28 @@ table, th, td {
 
 .programme-committee ul{
     list-style-type: none;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    columns: 3;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
     list-style-position: outside;
     margin: 0;
     padding: 0;
 }
 
-@media (min-width: 1440px) {
-	.programme-committee ul{
-	    -webkit-columns: 4;
-	    -moz-columns: 4;
-	    columns: 4;
-	}
+.pc-member {
+	font-weight: 600;
 }
 
-@media (max-width: 720px) {
-	.programme-committee ul{
-	    -webkit-columns: 2;
-	    -moz-columns: 2;
-	    columns: 2;
-	}
+.pc-org {
+
 }
 
-@media (max-width: 480px) {
+.pc-org:before {
+    content: " — ";
+}
+
+
+@media (max-width: 1280px) {
 	.programme-committee ul{
 	    -webkit-columns: 1;
 	    -moz-columns: 1;
