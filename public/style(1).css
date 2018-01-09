@@ -8032,3 +8032,16 @@ table, th, td {
 }
 /*Times end*/
 
+
+/*Accomodation*/
+ul.accommodation-list {
+	list-style-type: none;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+/*Accomodation end*/
