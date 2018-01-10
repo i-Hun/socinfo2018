@@ -188,7 +188,8 @@
 						</div>
 
 
-
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="./public/moment-timezone-with-data.js"></script> -->
 <script src="./public/luxon.min.js"></script>
 <script>
 function countdown() {
@@ -213,6 +214,14 @@ function countdown() {
 	}
 }
 countdown() 
+</script>
+
+<script>
+	// https://www.timeanddate.com/countdown/generic?iso=20180409T235959&p0=103
+	var now = moment();
+	var startDate = moment([2018, 3, 9, 23, 59, 59]).tz("Pacific/Honolulu");
+	moment.duration(moment().diff(startDate)).humanize();
+	
 </script>
 									<!-- BUTTON -->
 									<a href="https://easychair.org/cfp/Socinfo2018" target="_blank" class="btn btn-primary standard-button inpage-scroll inpage_scroll_btn">
