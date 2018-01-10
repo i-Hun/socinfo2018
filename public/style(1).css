@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Parallax One
 Theme URI: http://themeisle.com/themes/parallax-one/
 Author: ThemeIsle
@@ -8044,4 +8044,17 @@ ul.accommodation-list {
     padding: 0;
 }
 
-/*Accomodation end*/
+
+/*Accomodation end
+
+/*FB*/
+
+iframe.fb-likes {
+	position: relative;
+    margin-bottom: 0;
+}
+
+li.fb {
+	margin-bottom: -20px;
+}
+/*END FB*/
