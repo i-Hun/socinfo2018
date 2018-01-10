@@ -258,7 +258,7 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 28px;
     color: #008ed6;
     -ms-word-wrap: break-word;
@@ -724,7 +724,7 @@ big {
 .section-header h2 {
 	margin-top: 10px;
 	margin-bottom: 20px;
-	font-size: 2.4rem;
+	font-size: 2em;
 	line-height: 3.125rem;
 }
 
