@@ -7932,15 +7932,6 @@ p.edd-alert-error,
 
 
 
-/*MAPS*/
-
-iframe {
-	margin-bottom: 50px;
-}
-
-
-
-
 
 
 table, th, td {
@@ -8052,7 +8043,6 @@ ul.accommodation-list {
 
 iframe.fb-likes {
 	position: relative;
-    margin-bottom: 0;
 }
 
 li.fb {
@@ -8069,4 +8059,11 @@ ul.list-of-topics {
     list-style-position: inside;
     /*margin: 0;*/
     /*padding: 0;*/
+}
+
+
+.maps {
+	width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
 }
