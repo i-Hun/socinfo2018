@@ -219,13 +219,13 @@ function countdown() {
 countdown() 
 </script>
 
-<script>
+<!-- <script>
 	// https://www.timeanddate.com/countdown/generic?iso=20180409T235959&p0=103
 	var now = moment();
 	var startDate = moment([2018, 3, 9, 23, 59, 59]).tz("Pacific/Honolulu");
 	moment.duration(moment().diff(startDate)).humanize();
 	
-</script>
+</script> -->
 									<!-- BUTTON -->
 									<a href="https://easychair.org/cfp/Socinfo2018" target="_blank" class="btn btn-primary standard-button inpage-scroll inpage_scroll_btn">
 											Call for papers
@@ -1122,7 +1122,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 					<h3 id="workshop-venue">Workshop Venue</h3>
 					<p>All workshops will be held at 123 Kanal Griboyedova Emb, St. Petersburg. This is a newly restored building in the heart of St.Petersburg, right in front of magnificent St. Nicolas Cathedral that stands at the confluence of two beautiful channels.</p>
 					<p>	To get there, take metro to the Sadovaya (Садовая) or Spasskaya (Спасская) or Sennaya Ploshchad (Сенная площадь) Stations. Then ride a bus (49, 50 or 181), share taxi (7, 195, 212) or walk along Sadovaya St. till the bridge for 10-15 minutes. Cross the bridge and turn right.</p>
-					<iframe width="1000" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?zoom=10&q=Higher+School+of+Economics,+Department+of+Political+Science&output=embed"></iframe>
+					<iframe width="1000" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?z=15&q=Vysshaya+Shkola+Ekonomiki,+Departament+Inostrannykh+Yazykov&output=embed"></iframe>
 					
 					
 					<h3 id="main-conference-venue">Main Conference Venue</h3>
@@ -1134,9 +1134,10 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 						<li>Alternatively, catch share taxi (маршрутка) No 10 or 131. To do this, turn towards Neva river and make sure you are on the right (right = not left) side of Kantemirovskaya St. Raise your hand when you see a mini-bus with the respective number. Pay the driver when you get in. To exit, tell the driver the two magic words “KANTEMIROVSKAYA TRI” (Кантемировская три). You can say this while paying, thus showing you don’t know where it is. He will stop and signal you to get off when you reach the venue. Russian speakers can also explain that this is right before the bridge.</li>
 						<li>When you reach the building, go around if from the left and into the yard. Please, note that what is considered the ground floor in the UK or USA, is the 1st floor in Russia. So the 4th floor (your target) will be there where you would expect the 3rd floor to be. Remember it esp. when you use the elevator and the wall signs</li>.
 					</ul>
-					<iframe width="1000" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?f=q&source=s_q&hl=en&geocode=&q=Kantemirovskaya+ul.,+3,+Sankt-Peterburg,+194100&sll=59.981,30.328766&sspn=0.019065,0.055747&ie=UTF8&hq=&hnear=Kantemirovskaya+ulitsa,+3,+Sankt-Peterburg,+gorod+Sankt-Peterburg&ll=59.980987,30.328203&spn=0.009533,0.027874&t=m&z=14&output=embed"></iframe>
+					<iframe width="1000" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?z=15&q=Higher+School+of+Economics,+Department+of+Political+Science&output=embed"></iframe>
 
 				</div>
+				<!-- <div id="map"></div> -->
 			<div class="row">
 				<div class="col-md-12 content-section">
 					<h3 id="accommodation">Accommodation</h3>
@@ -1236,6 +1237,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
     </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112401936-1"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1243,6 +1245,57 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 
   gtag('config', 'UA-112401936-1');
 </script>
+
+
+<!--     <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe-2BbX4veDWV6_5n-lO84UMmZmFxxDTI&v=3&libraries=places"></script>
+   <script>
+var map;
+var infoWindow;
+var service;
+var hse_grib_coords = {lat: 59.9226978, lng: 30.3043149};
+
+function initialize() {
+  var mapOptions = {
+    zoom: 15,
+    center: new google.maps.LatLng(hse_grib_coords)
+  };
+  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  infoWindow = new google.maps.InfoWindow();
+
+  var service = new google.maps.places.PlacesService(map);
+  service.getDetails({
+    placeId: 'ChIJd0ZSkvwwlkYRWgKvPK16Xxg'
+  }, function(result, status) {
+    if (status != google.maps.places.PlacesServiceStatus.OK) {
+      alert(status);
+      return;
+    }
+    var marker = new google.maps.Marker({
+      map: map,
+      position: result.geometry.location
+    });
+    var address = result.adr_address;
+    var newAddr = address.split("</span>,");
+
+    infoWindow.setContent(result.name + "<br>" + newAddr[0] + "<br>" + newAddr[1] + "<br>" + newAddr[2]);
+    infoWindow.open(map, marker);
+  });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script> -->
+
+
 
     </body>
 
