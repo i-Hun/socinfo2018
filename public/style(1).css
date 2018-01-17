@@ -8059,3 +8059,14 @@ li.fb {
 	margin-bottom: -20px;
 }
 /*END FB*/
+
+
+ul.list-of-topics {
+	/*list-style-type: none;*/
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
