@@ -8068,3 +8068,7 @@ ul.list-of-topics {
     height: 450px;
     margin-bottom: 50px;
 }
+
+ul.dropdown-menu li {
+    width: 100%;
+}
