@@ -8080,6 +8080,14 @@ ul.dropdown-menu li {
 	height: 130px;
 	margin: 0 auto;
 }
+
+@media (max-width: 720px) {
+	.timeline {
+	    display:none;
+	}
+}
+
+
 .timeline .line {
 	margin-top: 150px;
 	height: 2px;
@@ -8117,4 +8125,10 @@ ul.dropdown-menu li {
 
 .timeline .dates, .timeline .description {
 	display: block;
+}
+
+@media (min-width: 720px) {
+	.dates-list {
+	    display:none;
+	}
 }
