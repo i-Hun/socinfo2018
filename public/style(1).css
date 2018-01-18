@@ -8132,3 +8132,7 @@ ul.dropdown-menu li {
 	    display:none;
 	}
 }
+
+.sticky-navigation {
+	padding-top: 20px;
+}
