@@ -8101,7 +8101,7 @@ ul.dropdown-menu li {
     z-index: 2;
     top: 0;
     height: 100%;
-    width: 40px;
+    width: 60px;
     background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
     left: 0;
 }
@@ -8112,8 +8112,8 @@ ul.dropdown-menu li {
     z-index: 2;
     top: 0;
     height: 100%;
-    width: 40px;
-    background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+    width: 60px;
+    background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
     right: 0;
 }
 
