@@ -206,8 +206,17 @@ function countdown() {
 	function calculate() {
 		var till = startDate.diffNow(["days", "hours", "minutes", "seconds"]).toObject()
 		if (till.minutes >= 0) {
-			document.getElementById("days").innerHTML    = till.days;
-			document.getElementById("hours").innerHTML   = till.hours;
+			if (till.hours-24>=0) {
+				document.getElementById("days").innerHTML    = till.days + 1;
+				document.getElementById("hours").innerHTML   = till.hours - 24;
+
+			} else {
+				document.getElementById("days").innerHTML    = till.days;
+				document.getElementById("hours").innerHTML   = till.hours;
+
+			}
+			
+			
 			document.getElementById("minutes").innerHTML = Math.round(till.minutes);
 			document.getElementById("seconds").innerHTML = Math.round(till.seconds);
 		}
