@@ -8072,3 +8072,45 @@ ul.list-of-topics {
 ul.dropdown-menu li {
     width: 100%;
 }
+
+
+
+.timeline {
+	width: 80%;
+	height: 130px;
+	margin: 0 auto;
+}
+.timeline .line {
+	margin-top: 150px;
+	height: 2px;
+	background-color: #333;
+}
+.timeline li.circle {
+	position: absolute;
+	color: #008ed6;
+	font-size: 30pt;
+	list-style-position: inside;
+
+}
+.timeline ul {
+	position: relative;
+	bottom: 17px;
+
+}
+.timeline .www {
+	width: 200px;
+	font-size: 18px;
+	color: #333;
+	position: absolute;
+	left: -50px;
+}
+.timeline .www.top {
+	bottom: 40px;
+}
+.timeline .description {
+
+}
+.timeline .dates{
+
+	font-weight: 600;
+}
