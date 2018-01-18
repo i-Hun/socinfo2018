@@ -8114,3 +8114,7 @@ ul.dropdown-menu li {
 
 	font-weight: 600;
 }
+
+.timeline .dates, .timeline .description {
+	display: block;
+}
