@@ -329,47 +329,47 @@ countdown()
 		<div class="timeline-wrapper">
 			<div class="timeline">
 				<ul>
-					<li class="circle" style="left: 0%">
+					<li class="circle" id="tlc-1" style="left: 0%">
 						<div class="www">
 						<span class="dates">April 9, 2018</span>
 						<span class="description">Workshop proposal submission deadline</span>
 						</div>
 					</li>
-					<li class="circle" style="left: 12%">
+					<li class="circle" id="tlc-2" style="left: 12%">
 						<div class="www top">
 						<span class="dates">April 30, 2018</span>
 						<span class="description">Workshop acceptance notification</span>
 						</div>
 					</li>
-					<li class="circle" style="left: 17%">
+					<li class="circle" id="tlc-3" style="left: 17%">
 						<div class="www">
 						<span class="dates">May 9, 2018</span>
 						<span class="description">Full paper & short paper submission deadline</span>
 						</div>
 					</li>
-					<li class="circle" style="left: 41%">
+					<li class="circle" id="tlc-4" style="left: 41%">
 						<div class="www top">
 						<span class="dates">June 19, 2018</span>
 						<span class="description">Notification of acceptance</span>
 						</div>
 					</li>
-					<li class="circle" style="left: 62%">
+					<li class="circle" id="tlc-5" style="left: 62%">
 						<div class="www">
 						<span class="dates">July 24, 2018</span>
 						<span class="description">Camera-ready version <br> Early-bird and cut-off registration</div></li>
-					<li class="circle" style="left: 90%">
+					<li class="circle" id="tlc-6" style="left: 90%">
 						<div class="www top" style="left: -135px;">
 						<span class="dates">Sept. 10, 2018</span>
 						<span class="description">Late registration</span>
 						</div>
 					</li>
-					<li class="circle" style="left: 98%">
+					<li class="circle" id="tlc-7" style="left: 98%">
 						<div class="www" style="left: -70px;">
 						<span class="dates">Sept. 25, 2018</span>
 						<span class="description">Workshop day</span>
 						</div>
 					</li>
-					<li class="circle" style="left: 99%;">
+					<li class="circle" id="tlc-8" style="left: 99%;">
 						<div class="www top" style="left: -50px;">
 						<span class="dates">Sept. 26–28, 2018</span>
 						<span class="description">Main conference dates</span>
@@ -378,6 +378,16 @@ countdown()
 				</ul>
 			</div>
 		</div>
+		<script>
+var timeline = document.getElementsByClassName("timeline");
+var timelineOffset = timeline.offsetTop;
+window.onscroll = function() {
+	console.log(timelineOffset)
+  if (window.pageYOffset+50 < timelineOffset) {
+  	timeline.style.width = "500px";
+  }
+}
+		</script>
 
  <section class="section-custom section-bordered about" id="about" role="region" aria-label="about">
 	<div class="section-overlay-layer">
@@ -1260,7 +1270,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 			<div class="row">
 				<div class="col-md-12 content-section">
 					<h3 id="accommodation">Accommodation</h3>
-					<p><strong>Hotels near 3 Kantemirovskaya st.</strong></p>
+					<p><strong>We do not provide an accommodation. You can choose yourself one the following hotels near 3 Kantemirovskaya st.</strong></p>
 					<ul class="accommodation-list">
 					    <li><a href="http://viborgskaia.ru/eng/" target="_blank">"Viborgskaya" Hotel</a><a href="http://otel-spb.ru/hotels/chernaya_rechka/">Hotel"</a></li>
 					    <li><a href="http://otel-spb.ru/hotels/chernaya_rechka/" target="_blank">Chernaya Rechka"</a><a href="http://www.guyot.spb.ru/gostinitsa">Hotel "Guyot"</a></li>

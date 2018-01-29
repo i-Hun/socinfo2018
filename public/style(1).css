@@ -8129,6 +8129,8 @@ ul.dropdown-menu li {
 	color: #008ed6;
 	font-size: 30pt;
 	list-style-position: inside;
+    transition-property: left;
+    transition-duration: 1s;
 
 }
 .timeline ul {
