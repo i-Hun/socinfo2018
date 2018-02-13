@@ -7958,6 +7958,10 @@ table, th, td {
 	color: red;
 }
 
+#excl2:hover .fa-exclamation-triangle {
+	color: red;
+}
+
 #step2:hover .fa-exclamation-triangle {
 	color: red;
 }
@@ -8180,4 +8184,8 @@ ul.dropdown-menu li {
 
 .sticky-navigation {
 	padding-top: 20px;
+}
+
+p a {
+	text-decoration: underline;
 }
