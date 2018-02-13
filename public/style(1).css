@@ -7988,6 +7988,13 @@ table, th, td {
 .pc-member {
 	font-weight: 600;
 }
+
+.pc-member .label {
+	background-color: white;
+	color: #888;
+	font-weight: 300;
+}
+
 .key-pc-member {
 	color: #008ed6;
 }
