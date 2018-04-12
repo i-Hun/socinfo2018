@@ -19,7 +19,6 @@
 	<meta property="og:locale" content="en_GB" />
 
 
-    <link rel="stylesheet" id="parallax-one-fonts-css" href="./public/css" type="text/css" media="all">
     <link rel="stylesheet" id="parallax-one-bootstrap-style-css" href="./public/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" id="parallax-one-font-awesome-css" href="./public/font-awesome.min.css" type="text/css" media="all">
     <link rel="stylesheet" id="parallax-one-style-css" href="./public/style.css" type="text/css" media="all">
@@ -114,12 +113,13 @@
 											</ul>
 										</li>
 										<li class="dropdown menu-item menu-item-home">
-											<a href="#calls">Calls for participation <i class="fas fa-angle-down"></i></a>
+											<a href="#calls">Calls <i class="fas fa-angle-down"></i></a>
 											<ul class="dropdown-menu">
 												<li><a href="#call-for-papers">Call for papers</a></li>
 												<li><a href="#call-for-workshops">Call for workshops</a></li>
 											</ul>
 										</li>
+										<li class="menu-item menu-item-home"><a href="#publications">Publications</a></li>
 										<li class="menu-item menu-item-home"><a href="#keynotes">Keynote Speakers</a></li>
 										<li class="dropdown menu-item menu-item-home">
 											<a href="#program">Programme</a>
@@ -335,7 +335,7 @@ countdown()
 		<div class="timeline-wrapper">
 			<div class="timeline">
 				<ul>
-					<li class="circle" id="tlc-1" style="left: 0%">
+					<li class="circle" id="tlc-1" style="left: 0%; color: #999">
 						<div class="www">
 						<span class="dates">April 9, 2018</span>
 						<span class="description">Workshop proposal submission deadline</span>
@@ -384,16 +384,6 @@ countdown()
 				</ul>
 			</div>
 		</div>
-		<script>
-var timeline = document.getElementsByClassName("timeline");
-var timelineOffset = timeline.offsetTop;
-window.onscroll = function() {
-	console.log(timelineOffset)
-  if (window.pageYOffset+50 < timelineOffset) {
-  	timeline.style.width = "500px";
-  }
-}
-		</script>
 
  <section class="section-custom section-bordered about" id="about" role="region" aria-label="about">
 	<div class="section-overlay-layer">
@@ -640,6 +630,69 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 						<li>Luca Maria Ayello, Bell Labs, UK</li>
 						<li>Sergei Koltcov, HSE, Russia</li>
 					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-custom section-bordered call-for-papers" id="publications" role="region">
+	<div class="section-overlay-layer">
+		<div class="container">
+			<div class="section-header text-left">
+				<h2 class="text-left dark-text">Publications</h2>
+				<div class="colored-line-left"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>SocInfo’18 offers two main opportunities for publication: a volume of conference proceedings in Springer’s Lecture Note Series in Computer Science (as in previous years), and the Journal of Web Science special issue on social informatics (NEW!). Authors are also free to choose a non-publication track, although this will not influence the review criteria.</p>
+
+					<h3><a href="http://www.springer.com/gb/computer-science/lncs">Springer’s Lecture Note Series in Computer Science</a></h3>
+
+					<p>
+						Volume editors:
+						<ul>
+							<li>Dmitry Ignatov, Higher School of Economics</li>
+							<li>Steffen Staab, university of Koblenz-Landau</li>
+							<li>Olessia Koltsova, Higher School of Economics</li>
+						</ul>
+					</p>
+
+					<p>
+						Camera ready version submission deadline: July 24, 2018.
+					</p>
+					<p>
+						Those aiming at LNCS should follow Springer’s author <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0" target="_blank">formatting guidelines</a>. 
+					</p>
+
+					<h3><a href="http://www.webscience-journal.net/webscience" target="_blank">Journal of Web Science</a></h3>
+
+					<p>JoWS is a young, peer reviewed, open access scholarly journal with an outstanding editorial board.</p>
+
+					<p>
+						Special issue on Social Informatics guest editors:
+						<ul>
+							<li>Steffen Staab, university of Koblenz-Landau</li>
+							<li>Olessia Koltsova, Higher School of Economics</li>
+						</ul>
+					</p>
+
+					<p>Special issue will accept the papers that will have been either published in LNCS proceedings or presented orally as full papers at SocInfo’18. Authors of papers published in LNCS will have to add at least 30% of new material (data and/or analysis). All papers are expected to have been revised according to the conference reviewers’ comments, but all will go through the double-blind review process again.</p>
+
+					<ul>
+						<li>Submission deadline: December 17, 2018</li>
+						<li>Anticipated date of acceptance after reviews: March 18, 2019</li>
+						<li>Anticipated publication date: April 2019</li>
+					</ul>
+
+					<p>As JoWS is an online journal, papers may be published in two sets: those that do not need major revision – in April 2019, and those that do – later in 2019.</p>
+					
+					<p>Page limit: 14 double column pages, 10-point type, single-spaced, or 30 single column pages, 12-point type, double-spaced. Follow <a href="http://www.webscience-journal.net/webscience/about/submissions#authorGuidelines" target="_blank">author guidelines</a>.
+					</p>
+					<p>	
+						Contact: <a href="mailto:socinfo2018@gmail.com">socinfo2018@gmail.com</a>.
+					</p>
+
 				</div>
 			</div>
 		</div>
@@ -1347,7 +1400,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 											<a href="#about">About</a>
 										</li>
 										<li class="dropdown menu-item menu-item-home">
-											<a href="#calls">Calls for participation</a>
+											<a href="#calls">Calls</a>
 										</li>
 										<li class="menu-item menu-item-home"><a href="#keynotes">Keynote Speakers</a></li>
 										<li class="dropdown menu-item menu-item-home">
@@ -1408,54 +1461,16 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 </script>
 
 
-<!--     <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe-2BbX4veDWV6_5n-lO84UMmZmFxxDTI&v=3&libraries=places"></script>
-   <script>
-var map;
-var infoWindow;
-var service;
-var hse_grib_coords = {lat: 59.9226978, lng: 30.3043149};
-
-function initialize() {
-  var mapOptions = {
-    zoom: 15,
-    center: new google.maps.LatLng(hse_grib_coords)
-  };
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-  infoWindow = new google.maps.InfoWindow();
-
-  var service = new google.maps.places.PlacesService(map);
-  service.getDetails({
-    placeId: 'ChIJd0ZSkvwwlkYRWgKvPK16Xxg'
-  }, function(result, status) {
-    if (status != google.maps.places.PlacesServiceStatus.OK) {
-      alert(status);
-      return;
-    }
-    var marker = new google.maps.Marker({
-      map: map,
-      position: result.geometry.location
-    });
-    var address = result.adr_address;
-    var newAddr = address.split("</span>,");
-
-    infoWindow.setContent(result.name + "<br>" + newAddr[0] + "<br>" + newAddr[1] + "<br>" + newAddr[2]);
-    infoWindow.open(map, marker);
-  });
-
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script> -->
-
+<script>
+	var timeline = document.getElementsByClassName("timeline");
+	var timelineOffset = timeline.offsetTop;
+	window.onscroll = function() {
+		console.log(timelineOffset)
+	  if (window.pageYOffset+50 < timelineOffset) {
+	  	timeline.style.width = "500px";
+	  }
+	}
+</script>
 
 
     </body>
