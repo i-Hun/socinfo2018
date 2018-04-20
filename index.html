@@ -76,7 +76,7 @@
 				<div class="overlay-layer-nav sticky-navigation-open" style="min-height: 108px;">
 
 			<!-- STICKY NAVIGATION -->
-			<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation appear-on-scroll">
+			<div class="navbar navbar-inverse navbar-fixed-top sticky-navigation ">
 				<!-- CONTAINER -->
 				<div class="container">
 
@@ -122,13 +122,12 @@
 										<li class="menu-item menu-item-home"><a href="#publications">Publications</a></li>
 										<li class="menu-item menu-item-home"><a href="#keynotes">Keynote Speakers</a></li>
 										<li class="dropdown menu-item menu-item-home">
-											<a href="#program">Programme</a>
-<!-- 											<ul class="dropdown-menu">
-												<li><a href="#at-glance">Programme at a glance</a></li>
-												<li><a href="#abstracts">Abstracts</a></li>
-												<li><a href="#workshop-descriptions">Workshop descriptions</a></li>
-											</ul>
- -->										</li>
+											<a href="#program">Programme <i class="fas fa-angle-down"></i></a>
+											<ul class="dropdown-menu">
+													<li><a href="#at-glance">Programme at a glance</a></li>
+													<li><a href="#workshop-descriptions">Workshop descriptions</a></li>
+												</ul>
+										</li>
 										<li class="dropdown menu-item menu-item-home">
 											<a href="#organizers">Organizers <i class="fas fa-angle-down"></i></a>
 											<ul class="dropdown-menu">
@@ -186,7 +185,7 @@
 										Laboratory for Internet Studies
 									</h5>
 
-						<div class="countdown">
+<!-- 						<div class="countdown">
 						  <p class="timer">
 						    <span id="days"></span> days
 						    <span id="hours"></span> hours 
@@ -194,12 +193,12 @@
 						    <span id="seconds"></span> and seconds
 						    till workshop proposal submission deadline.
 						  </p>
-						</div>
+						</div> -->
 
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script src="./public/moment-timezone-with-data.js"></script> -->
-<script src="./public/luxon.min.js"></script>
+<!-- <script src="./public/luxon.min.js"></script>
 <script>
 function countdown() {
 	var timer, days, hours, minutes, seconds;
@@ -233,7 +232,7 @@ function countdown() {
 }
 countdown() 
 </script>
-
+ -->
 <!-- <script>
 	// https://www.timeanddate.com/countdown/generic?iso=20180409T235959&p0=103
 	var now = moment();
@@ -863,9 +862,82 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				<h2 class="text-left dark-text">Programme</h2>
 				<div class="colored-line-left"></div>
 			</div>
+			<h3 id="at-glance" class="text-left">Programme at a glance</h3>
+			<p>TBA</p>
+			<h3 id="workshop-descriptions" class="text-left">Workshops</h3>
 			<div class="row">
 				<div class="col-md-12">
-					<p>TBA</p>
+					<strong>Analysis of Multiplex Social Networks with R</strong>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<p>The workshop will provide a practical introduction to multiplex network analysis using R. It will consist of very brief theoretical presentations of major concepts (multiplex centrality measures, clustering algorithms, etc.) followed by practical tasks where the participants will use the library to apply the concepts to a pedagogical dataset.</p>
+					<p>Multiplex networks are one of the most popular network analysis models, have been object of a large amount of research and are practically useful. Research in this area is still very active and we are now having for the first time full-fledged software libraries covering the whole spectrum of multiplex network analysis, from generation models and visualization functions to centrality measures and mining algorithms. This is also very relevant for social informatics, because multiplex networks have been a common meeting point for computer scientists, physicists and sociologists thanks to their ability to provide richer, more qualitative information than simple graphs, but still allow quantitative processing.</p>
+					<p>For each topic, a quick presentation of the relevant theory and methods will be followed by a practical application on a real pedagogical dataset. The main topics covered will be:
+						<ul>
+							<li>visualization,</li>
+							<li>actor measures (degree, neighborhood, ...),</li>
+							<li>actor/layer measures (layer relevance, ...),</li>
+							<li>layer comparison methods,</li>
+							<li>community detection (generalized Louvain, LART, clique percolation, ...),</li>
+							<li>generative models.</li>
+						</ul>
+
+					</p>
+				</div>
+				<div class="col-md-4 workshop-authours">
+					<p>
+					<span class="workshop-author">Matteo Magnani</span><br>
+					Associate professor<br>
+					InfoLab Department of Information Technology<br>
+					Uppsala University<br>
+					</p>
+					<p>
+					<span class="workshop-author">Luca Rossi</span><br>
+					Associate professor<br>
+					Digital Design Department<br>
+					Data Science & Society Lab (Coordinator)<br>
+					IT University of Copenhagen<br>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<strong>Topic modeling in practice</strong>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<p>The purpose of the workshop is to discuss the practical application of topic modeling in social science, as well as the demonstration of specialized software ‘TopicMiner’ and ‘Web TopicMiner’.</p>
+					<p>
+						Topic modeling (TM) is one of the few algorithms working with large textual data in the field of social informatics. However, the application of TM in real practice, on the one hand, is hampered by the limitations inherent in topic models, on the other hand, the application requires specialized programming skills.
+					</p>
+					<p>
+						Conducting the workshop will allow us to discuss the specifics of the application of TM in sociology, the mathematical limitations of topic models. Because, many social science researchers do not have any serious programming skills in python or R, this workshop assumes the training of the participants using the ‘TopicMiner’ interface program, which implements the basic options necessary for thematic modeling.
+					</p>
+					<p>
+						The workshop consists of three parts. The first part reviews mathematical models in topic modeling, and discusses model limitations. The second part demonstrates the software ‘TopicMiner’and ‘Web TopicMiner’. In the third part, students of this tutorial conduct topic modeling on their own computers or computers provided by HSE. This workshop assumes participation of up to 20 participants, according to the number of computers in the computer class.
+					</p>
+					<p>
+						Workshop content:
+						<ul>
+							<li>Review of topic models.</li>
+							<li>The problem of stability of topic models.</li>
+							<li>The principle of choosing the number of topics.</li>
+							<li>Regularization of topic models</li>
+							<li>Comparison of thematic models among themselves.</li>
+							<li>Topic modeling with ‘TopicMiner’ and ‘Web TopicMiner’.</li>
+						</ul>
+					</p>
+				</div>
+				<div class="col-md-4 workshop-authours">
+					<p>
+					<span class="workshop-author">Sergei Koltcov</span><br>
+					Associate professor<br>
+					Deputy Head at Internet Studies Lab<br>
+					Higher School of Economics, St. Petersburg<br>
+					</p>
 				</div>
 			</div>
 		</div>

@@ -8189,3 +8189,14 @@ ul.dropdown-menu li {
 p a {
 	text-decoration: underline;
 }
+
+.workshop-authours {
+	font-style: italic;
+	border-left: 1px solid #eee;
+	color: #666;
+
+}
+
+.workshop-author {
+	font-weight: 900;
+}
