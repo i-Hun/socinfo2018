@@ -48,6 +48,10 @@
 	<meta name="msapplication-TileImage" content="public/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#008ed6">
 
+	<script src="public/noty/noty.js"></script>
+	<link rel="stylesheet" href="public/noty/noty.css" type="text/css">
+	<link rel="stylesheet" href="public/noty/metroui.css" type="text/css">
+
 
 
 </head>
@@ -177,7 +181,7 @@
 							<div id="intro-section" class="intro-section">
 
 									<!-- WELCOM MESSAGE -->
-									<h2 id="intro_section_text_1" class="intro white-text">Social Informatics 2018 <a href="#news" style="color: white; text-decoration: underline;">(deadline extended)</a></h2>
+									<h2 id="intro_section_text_1" class="intro white-text">Social Informatics 2018</h2>
 									<h5 id="intro_section_text_2" class="white-text">
 										September 25–28, 2018<br>
 										Saint Petersburg, Russia<br>
@@ -1551,6 +1555,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112401936-1"></script>
 
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1569,6 +1574,19 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 	  	timeline.style.width = "500px";
 	  }
 	}
+</script>
+
+<script>
+	
+document.addEventListener("DOMContentLoaded", function(){
+	new Noty({
+    theme: 'metroui',
+    text: 'Social Informatics paper submission deadline has been extended to May 20 24:00 Hawaii time. Since this is likely to shift notification of acceptance deadline, applicants are required to submit abstracts by May 13, so that paper bidding could start right after that and the notification delay could be minimized. Note that camera ready deadline will NOT be extended.',
+    layout: "bottom",
+    type: "info"
+}).show();
+});
+
 </script>
 
 
