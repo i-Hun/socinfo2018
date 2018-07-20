@@ -1494,6 +1494,41 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 
 					<p>Papers eligible for student registration discount should have a student as the first author and be presented by this student in person at the conference. Applicants willing to be considered for student discount should choose “student paper” option during registration in EasyChair and submit a photocopy of any document confirming their student status  (in English or in Russian) shortly after  the paper submission via the conference E-mail. The notification of eligibility for student discount will be provided together with the notification of acceptance. Only applicants who have provided obviously invalid documents can be denied the discount. Papers whose authors have paid a reduced fee without providing any documents will be rejected.</p>
 					<p>Additionally, three best applicants from Russia will be given a 30% discount sponsored by HSE. This discount will be given to individuals holding Russian citizenship who are (a)  full-time researchers or teachers at Russian universities or non-for-profit research organizations  or (b) PhD students at Russian universities or research organizations. Applicants willing to be considered for this discount should choose “Russian paper” option during registration in EasyChair and submit a photocopy of any document confirming their citizenship and employment / PhD programme enrollment (in Russian) shortly after  the paper submission via the conference E-mail. The notification of eligibility for this discount will be provided together with the notification of acceptance. Papers whose authors have paid a reduced fee without providing any documents will be rejected.</p>
+					
+					<div id="payment-req">
+						<h3>Payment Methods</h3>
+						<strong>By card online</strong>
+						<p>This is the preferred method of payment. All online transactions are done in Russian Rubles (RUB, ₽) only.</p>
+						<p>The legislation of the Russian Federation and HSE University rules require that all online payments by both Russian and international participants should be made in the national currency – Russian Rubles (RUB, ₽). Registration fees in Russian Rubles have been signed off by members of Program Committee and calculated with the reference to the 3-month average U.S. Dollar exchange rate of the Central Bank of the Russian Federation.
+						</p>
+						<p>All fees for the conference registration can be paid by card online clear of all bank charges. To complete your registration, please <a href="https://linis.hse.ru/en/payment/220435445" target="_blank">click.</a></p>
+
+						<strong>By bank transfers</strong>
+
+						<p>All fees for the conference registration can be paid by bank transfer clear of all transfer charges*. Please ensure that the bank transfer form contains the delegate’s full name and the Social Informatics 2018 as the title of the event. Grounds and procedure for bank transfers are described in the <a href="public/files/Offer_SocInfo 2018.pdf">offer</a>.</p>
+
+						<strong><i>Transfer charges</i></strong>
+
+						<p>When you make an international wire transfer you can choose who pays the transfer charges.</p>
+						<p>BEN, SHA, OUR are codes in a SWIFT instruction, at field "Details of Charges".</p>
+						<p>The OUR instruction means you pay all transfer charges. We receive all your payment. SHA (shared) means you only pay your bank's outgoing transfer charge. We receive your payment minus the correspondent (intermediary) bank charges. BEN (beneficiary) means you do not pay any charge. We receive your payment minus all transfer charges.</p>
+						<p>We require all international transfers to us to be made with the OUR instruction.</p>
+
+						<strong><i>Beneficiary bank details for payments in USD</i></strong>
+
+						<ul>
+							<li>Address:  Souyuza Pechatnikov 16, Saint-Petersburg, RU, 190121</li>
+							<li>Beneficiary: HSE – Saint Petersburg</li>
+							<li>Beneficiary bank: SBERBANK (SEVERO-ZAPADNY HEAD OFFICE) ST.PETERSBURG, RUSSIA</li>
+							<li>SWIFT: SABRRU2P</li>
+							<li>Transit currency account (USD): 40503840155041000004</li>
+							<li>TIN 7714030726</li>
+							<li>CAT 783902001</li>
+							<li>BIN 1027739630401</li>
+						</ul>
+
+						<p>If you require arrangements for bank transfer payments or you have a questions about EURO please send us a request at <a href="mailto:socinfo2018@gmail.com">socinfo2018@gmail.com</a></p>
+					</div>
 				</div>
 			</div>
 			<div class="row" id="visa">				
@@ -1750,7 +1785,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 </script>
 
 
-<script>
+<!-- <script>
 	var timeline = document.getElementsByClassName("timeline");
 	var timelineOffset = timeline.offsetTop;
 	window.onscroll = function() {
@@ -1760,28 +1795,38 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 	  }
 	}
 </script>
-
+ -->
 <script>
-	
-document.addEventListener("DOMContentLoaded", function(){
-	new Noty({
-    theme: 'metroui',
-    text: 'Dear colleagues, we are happy to announce the list of works accepted to SocInfo 2018.',
-    layout: "topRight",
-    type: "info",
-  buttons: [
-    Noty.button('Show it!', 'btn btn btn-default', function () {
-        window.location.href="accepter_papers.html";
-    }),
-  ]
-}).show();
+	document.addEventListener("DOMContentLoaded", function(){
+		new Noty({
+	    theme: 'metroui',
+	    text: 'Dear colleagues, we have added a section describing the payment methods.',
+	    layout: "topRight",
+	    type: "info",
+	}).show();
 
-	new Noty({
-    theme: 'metroui',
-    text: 'Dear guests, letter of invitation can only cover the official dates of the conference ±1-2 days. Any travel requirements outside of the conference dates must be explained to the embassy in your visa application.',
-    layout: "topRight",
-    type: "info",
-}).show();
+
+// document.addEventListener("DOMContentLoaded", function(){
+// 	new Noty({
+//     theme: 'metroui',
+//     text: 'Dear colleagues, we are happy to announce the list of works accepted to SocInfo 2018.',
+//     layout: "topRight",
+//     type: "info",
+//   buttons: [
+//     Noty.button('Show it!', 'btn btn btn-default', function () {
+//         window.location.href="accepter_papers.html";
+//     }),
+//   ]
+// }).show();
+
+// 	new Noty({
+//     theme: 'metroui',
+//     text: 'Dear guests, letter of invitation can only cover the official dates of the conference ±1-2 days. Any travel requirements outside of the conference dates must be explained to the embassy in your visa application.',
+//     layout: "topRight",
+//     type: "info",
+// }).show();
+
+
 
 });
 
