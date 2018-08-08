@@ -52,7 +52,68 @@
 	<link rel="stylesheet" href="public/noty/noty.css" type="text/css">
 	<link rel="stylesheet" href="public/noty/metroui.css" type="text/css">
 
+<style scoped>
 
+	.day {
+		padding: 10px 0;
+	}
+
+	.day-wrapper {
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 10px 3px #00000014;
+	}
+
+	.event {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	.event-dates, .event-location {
+		/*font-size: 0.85rem*/
+	}
+
+	.event:last-child {
+			margin-bottom: 0;
+	}
+
+	.event-description, .event-attachments {
+		/*font-size: 0.9rem*/
+	}
+	
+	.schedule {
+		padding-bottom: 50px;
+	}
+
+
+	@media (max-width: 700px) {
+		.schedule ul {
+			columns: 1;
+		}
+	}
+
+	@media (min-width: 701px) {
+		.schedule ul {
+			columns: 2;
+		}
+	}
+	@media (min-width: 1281px) {
+		.schedule ul {
+			columns: 3;
+		}
+	}
+
+	.schedule ul li{
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+
+	.days-list {
+		list-style: none;
+		padding: none;
+	}
+
+</style>
 
 </head>
 
@@ -865,8 +926,8 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				<h2 class="text-left dark-text">Programme</h2>
 				<div class="colored-line-left"></div>
 			</div>
-			<h3 id="at-glance" class="text-left">Programme at a glance</h3>
-			<p>Programme is not avaliable yet. You can add this calendar to your google account to recieve notifications on programme updates and have this programme on mobile devices. Use <a href="https://calendar.google.com/calendar?cid=NnZsYWtic2tlanI5ODNlYWdkcWFpZW8zcDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">this link</a> to share the programme.</p>
+			<h3 id="at-glance" class="text-left">Tentative programme</h3>
+			<p>You can add this calendar to your Google account to recieve notifications on programme updates and have this programme on mobile devices. Use <a href="https://calendar.google.com/calendar?cid=NnZsYWtic2tlanI5ODNlYWdkcWFpZW8zcDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">this link</a> to share the programme.</p>
 			<style>
 				.resp-container {
 				    position: relative;
@@ -883,8 +944,46 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				    border: 0;
 				}
 			</style>
-			<div class="resp-container">
-				<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=1&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=6vlakbskejr983eagdqaieo3p0%40group.calendar.google.com&amp;color=%23FFFFFF&amp;ctz=Europe%2FMoscow&amp;dates=20180925%2F20180928" style="border-width:0" class="resp-iframe" frameborder="0" scrolling="no"></iframe>
+
+			<div id="vue-calendar">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default" v-bind:class="{ active: !isFullCalendar }" @click="isFullCalendar = false">Programme in a nutshell</button>
+					<button type="button" class="btn btn-default" v-bind:class="{ active: isFullCalendar }" @click="isFullCalendar = true">Full programme</button>
+				</div>
+				<div class="resp-container" v-if="!isFullCalendar">
+					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=1&amp;showTabs=1&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=6vlakbskejr983eagdqaieo3p0%40group.calendar.google.com&amp;color=%23FFFFFF&amp;ctz=Europe%2FMoscow&amp;dates=20180925/20180928" style="border-width:0" class="resp-iframe" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="schedule-blocks" v-if="isFullCalendar">
+					<ul class="days-list">
+						<li class="day" v-for="day in days">
+							<div class="day-wrapper">
+								<h3 class="title is-5">{{day.dayTitle}}</h3>
+								<div class="event" v-for="event in day.events">
+									<a class="event-title" target="_blank" :href="event.htmlLink">{{event.summary}}</a>
+									<div class="event-dates">
+										<i class="far fa-clock"></i>
+										<span>{{formatEventDate(event.start.dateTime, event.end.dateTime)}}</span>
+									</div>
+									<div class="event-location" v-if="event.location">
+										<i class="fas fa-map-marker-alt"></i>
+										<span>
+											{{event.location}}
+										</span>
+									</div>
+									<div v-if="event.attachments && event.attachments.length" class="event-attachments">
+										<div class="attachments buttons">
+											<a class="button is-small" :href="attachment.fileUrl" target="_blank" v-for="attachment in event.attachments">
+												<i class="fas fa-paperclip"></i>
+												<span>{{attachment.title}}</span>
+											</a>
+										</div>
+									</div>
+									<div class="event-description content" v-if="event.description && event.description.length" v-html="event.description"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 
 			<h3 id="workshop-descriptions" class="text-left">Workshops</h3>
@@ -1827,45 +1926,148 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 	}
 </script>
  -->
-<script>
+<!-- <script>
 	document.addEventListener("DOMContentLoaded", function(){
 		new Noty({
 		theme: 'metroui',
-		text: 'Dear colleagues, we have added a section describing the payment methods.',
+		text: 'Dear colleagues, we have preliminary programme now!.',
 		layout: "topRight",
 		type: "info",
 	}).show();
 
 
-
-
-// document.addEventListener("DOMContentLoaded", function(){
-// 	new Noty({
-//     theme: 'metroui',
-//     text: 'Dear colleagues, we are happy to announce the list of works accepted to SocInfo 2018.',
-//     layout: "topRight",
-//     type: "info",
-//   buttons: [
-//     Noty.button('Show it!', 'btn btn btn-default', function () {
-//         window.location.href="accepter_papers.html";
-//     }),
-//   ]
-// }).show();
-
-// 	new Noty({
-//     theme: 'metroui',
-//     text: 'Dear guests, letter of invitation can only cover the official dates of the conference ±1-2 days. Any travel requirements outside of the conference dates must be explained to the embassy in your visa application.',
-//     layout: "topRight",
-//     type: "info",
-// }).show();
-
-
-
 });
+
+</script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	function compareDatesStart(a, b) {
+		var start = moment(a.start.dateTime || a.start.date);
+		
+		var end = moment(b.start.dateTime || b.start.date);
+
+		return start - end;
+	}
+
+	function compareDatesEnd(a, b) {
+		var start = moment(a.end.dateTime || a.end.date);
+		
+		var end = moment(b.end.dateTime || b.end.date);
+
+		return start - end;
+	}
+
+	function eventsRangeStartEnd(events) {
+		const firstEvent = events.sort(compareDatesStart)[0];
+		const lastEvent = events.sort(compareDatesEnd)[events.length - 1];
+
+		const start = moment(firstEvent.start.dateTime || firstEvent.start.date);
+		const end = moment(lastEvent.end.dateTime || lastEvent.end.date);
+
+		if (moment(start).isSame(end, "day")) {
+			return `${start.format("MMMM D")}`;
+		} else if (moment(start).isSame(end, "month")) {
+			return `${start.format("MMMM D")} — ${end.format("D")}`;
+		}
+
+		return `${start.format("MMMM D")} — ${end.format("MMMM D")}`;
+	}
+
+
+	var app = new Vue({
+		el: '#vue-calendar',
+		data() {
+			return {
+				calendarTitle: "",
+				calendarDescription: "",
+				events: [],
+				isLoading: true,
+				isFullCalendar: false
+			}
+		},
+		created() {
+			axios.get(`https://clients6.google.com/calendar/v3/calendars/6vlakbskejr983eagdqaieo3p0@group.calendar.google.com/events?calendarId=6vlakbskejr983eagdqaieo3p0%40group.calendar.google.com&singleEvents=true&timeZone=Europe%2FMoscow&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2018-09-24T00%3A00%3A00%2B03%3A00&timeMax=2018-10-01T00%3A00%3A00%2B03%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs`)
+			.then(response => {
+				this.calendarTitle = response.data.summary;
+				this.calendarDescription = response.data.description;
+				this.events = response.data.items.sort(compareDatesStart);
+
+				this.isLoading = false
+			})
+			.catch(e => {
+				console.error(e);
+			})
+		},
+		methods: {
+			formatEventDate (start, end) {
+				const startFormated = moment(start).format("H:mm");
+				const endFormated = moment(end).format("H:mm");
+				if (startFormated === endFormated) {
+					return `${startFormated}, ${moment(end).format("MMM Do")}`
+				}
+				const diff = moment(end).diff(moment(start))
+				return `${startFormated} — ${endFormated}, ${moment(end).format("MMM Do")} (${moment.duration(diff).asMinutes()} minutes)`;
+			},
+			getDay(s) {
+				return moment(s).format("D");
+			},
+		},
+		computed: {
+			sharngLink () {
+				return `https://calendar.google.com/calendar?cid=NnZsYWtic2tlanI5ODNlYWdkcWFpZW8zcDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ`
+			},
+			days () {
+				// создаём объект вида {"день или промежуток": [список событий]}
+				var resultDaysObj = {};
+				// и наполняем его
+				for (const event of this.events) {
+
+					const startSameDay = moment(event.start.dateTime || event.start.date).format("D") === moment(event.end.dateTime || event.end.date).format("D")
+
+					if (startSameDay) {
+						var day = moment(event.start.dateTime || event.start.date).format("D");
+					}
+					else {
+						var day = `${moment(event.start.dateTime || event.start.date).format("D")} - ${moment(event.end.dateTime || event.end.date).format("D")}`
+					}
+
+					if (day in resultDaysObj) {
+						resultDaysObj[day].push(event);
+					} else {
+						resultDaysObj[day] = []
+						resultDaysObj[day].push(event);
+					}
+				}
+
+				// переделываем объект в список объектов, чтобы можно было отсортировать. 
+				var resultDaysArray = [];
+
+				for (const [day, events] of Object.entries(resultDaysObj)) {
+
+					const firstEvent = events.sort(compareDatesStart)[0];
+					const lastEvent = events.sort(compareDatesEnd)[events.length - 1];
+
+					const dayObj = {
+						events: events.sort(compareDatesStart),
+						dayTitle: eventsRangeStartEnd(events)
+					}
+					resultDaysArray.push(dayObj);
+				}
+
+				return _.sortBy(resultDaysArray, day => moment(day.events[0].start.dateTime || day.events[0].start.date));
+			},
+			calendarDatesRange () {
+				return eventsRangeStartEnd(this.events);
+			}
+		}
+})
 
 </script>
 
-
-    </body>
+</body>
 
 </html>
