@@ -1926,19 +1926,25 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 	}
 </script>
  -->
-<!-- <script>
+<script>
 	document.addEventListener("DOMContentLoaded", function(){
 		new Noty({
 		theme: 'metroui',
-		text: 'Dear colleagues, we have preliminary programme now!.',
+		text: 'Dear colleagues, registration for workshops is open!',
 		layout: "topRight",
 		type: "info",
+		  buttons: [
+		    Noty.button('Register', 'btn btn-default', function () {
+		        // window.location.href = 'https://goo.gl/forms/BnlkMmld14BRY0Dk2';
+		        window.open('https://goo.gl/forms/BnlkMmld14BRY0Dk2','_blank');
+		    }, {id: 'button1', 'data-status': 'ok'}),
+		  ]
 	}).show();
 
 
 });
 
-</script> -->
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
