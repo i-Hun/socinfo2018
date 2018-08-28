@@ -469,10 +469,11 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				</div>
 				<div class="col-md-6" id="sponsors">
 					<h3 class="text-center">Sponsors</h3>
+					<a href="http://www.rfbr.ru/rffi/eng" target="_blank" rel="noopener"><img class="center-block" src="public/logo_rfbr.png" width="250"></a>
 					<a href="http://dsp.acm.org/" target="_blank" rel="noopener"><img class="center-block" src="public/acm-300x105.png" width="300"></a>
 					<a href="http://www.springer.com/" target="_blank" rel="noopener"><img class="center-block" src="public/1280px-Springer.svg_-300x83.png" width="300"></a>
 					<a href="https://www.hse.ru/en/" target="_blank" rel="noopener"><img class="center-block" src="public/hse_logo_full.png" width="130"></a>
-					<a href="http://www.rfbr.ru/rffi/eng" target="_blank" rel="noopener"><img class="center-block" src="public/logo_rfbr.png" width="250"></a>
+					<a href="http://www.zdes.spbu.ru/en" target="_blank" rel="noopener"><img class="center-block" src="public/zdes_logo.png" width="190"></a>
 				</div>
 
 			</div>
@@ -947,8 +948,8 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 
 			<div id="vue-calendar">
 				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default" v-bind:class="{ active: !isFullCalendar }" @click="isFullCalendar = false">Programme in a nutshell</button>
 					<button type="button" class="btn btn-default" v-bind:class="{ active: isFullCalendar }" @click="isFullCalendar = true">Full programme</button>
+					<button type="button" class="btn btn-default" v-bind:class="{ active: !isFullCalendar }" @click="isFullCalendar = false">In Google Calendar</button>
 				</div>
 				<div class="resp-container" v-if="!isFullCalendar">
 					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=1&amp;showTabs=1&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=6vlakbskejr983eagdqaieo3p0%40group.calendar.google.com&amp;color=%23FFFFFF&amp;ctz=Europe%2FMoscow&amp;dates=20180925/20180928" style="border-width:0" class="resp-iframe" frameborder="0" scrolling="no"></iframe>
@@ -1836,38 +1837,35 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 			<div itemscope="" role="navigation" itemtype="http://schema.org/SiteNavigationElement" id="menu-secondary" aria-label="Secondary Menu">
 				<h2 class="screen-reader-text">Secondary Menu</h2>
 				<ul id="menu-main-menu-1" class="footer-links small-text"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#parallax_header"><i></i></a></li>
-	
-									<ul id="menu-main-menu" class="primary-menu small-text">
-										<li class="menu-item menu-item-type-custom menu-item-object-custom"<a href="#parallax_header"><i></i></a></li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#about">About</a>
-										</li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#calls">Calls</a>
-										</li>
-										<li class="menu-item menu-item-home"><a href="#keynotes">Keynotes</a></li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#program">Programme</a>
-										</li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#organizers">Organizers</a>
-										</li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#registration-visa">Registration & Visa</a>
-										</li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#venue-accommodation">Venue & Accommodation</a>
-										</li>
-										<li class="dropdown menu-item menu-item-home">
-											<a href="#news">News</a>
-										</li>
-									</ul>
+
+				<ul id="menu-main-menu" class="primary-menu small-text">
+					<li class="menu-item menu-item-type-custom menu-item-object-custom"<a href="#parallax_header"><i></i></a></li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#about">About</a>
+					</li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#calls">Calls</a>
+					</li>
+					<li class="menu-item menu-item-home"><a href="#keynotes">Keynotes</a></li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#program">Programme</a>
+					</li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#organizers">Organizers</a>
+					</li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#registration-visa">Registration & Visa</a>
+					</li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#venue-accommodation">Venue & Accommodation</a>
+					</li>
+					<li class="dropdown menu-item menu-item-home">
+						<a href="#news">News</a>
+					</li>
+				</ul>
 </div>
 
-<!-- 								<ul class="social-icons">
-									<li><i class="fab fa-facebook"></i></li>
-											</ul> -->
-						</div><!-- .footer-bottom-wrap -->
+						</div>
 </footer>
 
 </div>
@@ -1909,17 +1907,6 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 
 
 <!-- <script>
-	var timeline = document.getElementsByClassName("timeline");
-	var timelineOffset = timeline.offsetTop;
-	window.onscroll = function() {
-		console.log(timelineOffset)
-	  if (window.pageYOffset+50 < timelineOffset) {
-	  	timeline.style.width = "500px";
-	  }
-	}
-</script>
- -->
-<script>
 	document.addEventListener("DOMContentLoaded", function(){
 		new Noty({
 		theme: 'metroui',
@@ -1933,13 +1920,12 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 		    }, {id: 'button1', 'data-status': 'ok'}),
 		  ]
 	}).show();
-
-
 });
 
-</script>
+</script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone-with-data-2012-2022.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -1968,12 +1954,12 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 		const end = moment(lastEvent.end.dateTime || lastEvent.end.date);
 
 		if (moment(start).isSame(end, "day")) {
-			return `${start.format("MMMM D")}`;
+			return `${start.tz('Europe/Moscow').format("MMMM D")}`;
 		} else if (moment(start).isSame(end, "month")) {
-			return `${start.format("MMMM D")} — ${end.format("D")}`;
+			return `${start.tz('Europe/Moscow').format("MMMM D")} — ${end.tz('Europe/Moscow').format("D")}`;
 		}
 
-		return `${start.format("MMMM D")} — ${end.format("MMMM D")}`;
+		return `${start.tz('Europe/Moscow').format("MMMM D")} — ${end.tz('Europe/Moscow').format("MMMM D")}`;
 	}
 
 
@@ -1985,7 +1971,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 				calendarDescription: "",
 				events: [],
 				isLoading: true,
-				isFullCalendar: false
+				isFullCalendar: true
 			}
 		},
 		created() {
@@ -2003,16 +1989,16 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 		},
 		methods: {
 			formatEventDate (start, end) {
-				const startFormated = moment(start).format("H:mm");
-				const endFormated = moment(end).format("H:mm");
+				const startFormated = moment(start).tz('Europe/Moscow').format("H:mm");
+				const endFormated = moment(end).tz('Europe/Moscow').format("H:mm");
 				if (startFormated === endFormated) {
-					return `${startFormated}, ${moment(end).format("MMM Do")}`
+					return `${startFormated}, ${moment(end).tz('Europe/Moscow').format("MMM Do")}`
 				}
 				const diff = moment(end).diff(moment(start))
-				return `${startFormated} — ${endFormated}, ${moment(end).format("MMM Do")} (${moment.duration(diff).asMinutes()} minutes)`;
+				return `${startFormated} — ${endFormated}, ${moment(end).tz('Europe/Moscow').format("MMM Do")} (${moment.duration(diff).asMinutes()} minutes)`;
 			},
 			getDay(s) {
-				return moment(s).format("D");
+				return moment(s).tz('Europe/Moscow').format("D");
 			},
 		},
 		computed: {
