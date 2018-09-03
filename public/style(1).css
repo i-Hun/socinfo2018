@@ -8216,3 +8216,18 @@ p a {
     height: 100%;
     border: 0;
 }
+
+.podium-discussants .feedback p {
+	text-align: left;
+	font-style: normal;
+}
+
+.feedback h5 {
+	font-size: 18px;
+    margin-top: 40px;
+}
+
+.feedback .pic-container-inner {
+	width: 100px;
+    height: 100px;
+}

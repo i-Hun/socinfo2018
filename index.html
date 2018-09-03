@@ -3,13 +3,13 @@
 <html lang="en-GB" class="no-js">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Socinfo2018 – 10th International Conference on Social Informatics</title>
-    <meta name="description" content="10th International Conference on Social Informatics, St.Petersburg, Russia, September 25–28, 2018. SocInfo is an interdisciplinary venue for researchers studying the interplay between socially-centric platforms and social phenomena." />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Socinfo2018 – 10th International Conference on Social Informatics</title>
+		<meta name="description" content="10th International Conference on Social Informatics, St.Petersburg, Russia, September 25–28, 2018. SocInfo is an interdisciplinary venue for researchers studying the interplay between socially-centric platforms and social phenomena." />
 
-    <meta name="yandex-verification" content="3f589eabe8f778e0" />
-    <meta name="google-site-verification" content="iCy4s1txecsledkePoNcafvZZDE_rpopgSbiW1plsIk" />
+		<meta name="yandex-verification" content="3f589eabe8f778e0" />
+		<meta name="google-site-verification" content="iCy4s1txecsledkePoNcafvZZDE_rpopgSbiW1plsIk" />
 
 	<meta property="og:title" content="Socinfo2018 – 10th International Conference on Social Informatics" />
 	<meta property="og:type" content="website" />
@@ -19,15 +19,18 @@
 	<meta property="og:locale" content="en_GB" />
 
 
-    <link rel="stylesheet" id="parallax-one-bootstrap-style-css" href="./public/bootstrap.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="parallax-one-font-awesome-css" href="./public/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="parallax-one-style-css" href="./public/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="parent-style-css" href="./public/style(1).css" type="text/css" media="all">
-    <script type="text/javascript" src="./public/jquery.js"></script>
-    <script type="text/javascript" src="./public/jquery-migrate.min.js"></script>
-    <link rel="stylesheet" id="ub_global_footer_style-css" href="./public/main.css" type="text/css" media="all">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" id="parallax-one-bootstrap-style-css" href="./public/bootstrap.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="parallax-one-font-awesome-css" href="./public/font-awesome.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="parallax-one-style-css" href="./public/style.css" type="text/css" media="all">
+		<link rel="stylesheet" id="parent-style-css" href="./public/style(1).css" type="text/css" media="all">
+		<script
+		  src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./public/jquery-migrate.min.js"></script>
+		<link rel="stylesheet" id="ub_global_footer_style-css" href="./public/main.css" type="text/css" media="all">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
 
 	<link rel="apple-touch-icon" sizes="57x57" href="public/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="public/favicons/apple-icon-60x60.png">
@@ -38,7 +41,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="public/favicons/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="public/favicons/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192"	href="/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="public/favicons/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
@@ -191,6 +194,7 @@
 											<ul class="dropdown-menu">
 													<li><a href="#at-glance">Programme at a glance</a></li>
 													<li><a href="#workshop-descriptions">Workshop descriptions</a></li>
+													<li><a href="#podium">Podium discussion</a></li>
 													<li><a href="#posters">Posters</a></li>
 												</ul>
 										</li>
@@ -252,13 +256,13 @@
 									</h5>
 
 <!-- 						<div class="countdown">
-						  <p class="timer">
-						    <span id="days"></span> days
-						    <span id="hours"></span> hours 
-						    <span id="minutes"></span> minutes
-						    <span id="seconds"></span> and seconds
-						    till workshop proposal submission deadline.
-						  </p>
+							<p class="timer">
+								<span id="days"></span> days
+								<span id="hours"></span> hours 
+								<span id="minutes"></span> minutes
+								<span id="seconds"></span> and seconds
+								till workshop proposal submission deadline.
+							</p>
 						</div> -->
 
 
@@ -278,12 +282,12 @@ function countdown() {
 		var till = startDate.diffNow(["days", "hours", "minutes", "seconds"]).toObject()
 		if (till.minutes >= 0) {
 			if (till.hours-24>=0) {
-				document.getElementById("days").innerHTML    = till.days + 1;
-				document.getElementById("hours").innerHTML   = till.hours - 24;
+				document.getElementById("days").innerHTML		= till.days + 1;
+				document.getElementById("hours").innerHTML	 = till.hours - 24;
 
 			} else {
-				document.getElementById("days").innerHTML    = till.days;
-				document.getElementById("hours").innerHTML   = till.hours;
+				document.getElementById("days").innerHTML		= till.days;
+				document.getElementById("hours").innerHTML	 = till.hours;
 
 			}
 			
@@ -292,7 +296,7 @@ function countdown() {
 			document.getElementById("seconds").innerHTML = Math.round(till.seconds);
 		}
 		else {
-		    	return;
+					return;
 			}
 	}
 }
@@ -322,21 +326,21 @@ countdown()
 						</div>
 				<!-- /END COLOR OVER IMAGE -->
 			<div id="oii-branding">
-				<div class="container"  style="text-align: left">
-			    	<a href="https://www.hse.ru/en/" target="_blank" class="logo logo_hse">
+				<div class="container"	style="text-align: left">
+						<a href="https://www.hse.ru/en/" target="_blank" class="logo logo_hse">
 						<img src="./public/hse_logo.png" alt="Higher School of Economics">
-			        </a>
+							</a>
 				</div>
 			</div>
 			<div id="oii-branding">
 				<div class="container">
-			        <a href="https://linis.hse.ru/en/" target="_blank" class="logo logo_linis">
+							<a href="https://linis.hse.ru/en/" target="_blank" class="logo logo_linis">
 						<img src="./public/linis_logo.png" alt="Internet Studies Lab">
 					</a>
 				</div>
 			</div>
 		</header>
-	<!-- /END HOME / HEADER  -->
+	<!-- /END HOME / HEADER	-->
 	
 		<div itemprop="" id="content" class="content-warp" role="main">
 		<div class="clients white-bg" id="clients" role="region" aria-label="Affiliates Logos">
@@ -785,7 +789,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 							<div class="feedback-text-wrap">
 								<h3 class="colored-text"><a href="https://ingmarweber.de/" target="_blank">Ingmar Weber</a></h3>
 								<div class="keynote-title">Digital Demography</div>
-								<p>Ingmar Weber is <a href="http://qcri.org.qa/our-people/bio?pid=67&par=acc&name=IngmarWeber">research director</a> of the <a href="http://www.qcri.org.qa/our-research/social-computing/social-computing">Social Computing Group</a> at <a href="http://www.qcri.com/">Qatar Computing Research Institute</a>. His interdisciplinary research looks at what online user-generated data can tell us about the offline world and society at large. He works with sociologists, political scientists, demographers and medical professionals and several of his projects have been covered by international media.  Prior to joining QCRI, Ingmar Weber was a researcher at Yahoo! Research Barcelona. He holds a BA & Ma from Cambridge and did his PhD at the Max-Planck Institute for Computer Science. He is one of <a href="https://speakers.acm.org/speakers/weber_7123" target="_blank">ACM’s Distinguished Speakers</a> and his keynote is financially supported by ACM.</p>
+								<p>Ingmar Weber is <a href="http://qcri.org.qa/our-people/bio?pid=67&par=acc&name=IngmarWeber">research director</a> of the <a href="http://www.qcri.org.qa/our-research/social-computing/social-computing">Social Computing Group</a> at <a href="http://www.qcri.com/">Qatar Computing Research Institute</a>. His interdisciplinary research looks at what online user-generated data can tell us about the offline world and society at large. He works with sociologists, political scientists, demographers and medical professionals and several of his projects have been covered by international media.	Prior to joining QCRI, Ingmar Weber was a researcher at Yahoo! Research Barcelona. He holds a BA & Ma from Cambridge and did his PhD at the Max-Planck Institute for Computer Science. He is one of <a href="https://speakers.acm.org/speakers/weber_7123" target="_blank">ACM’s Distinguished Speakers</a> and his keynote is financially supported by ACM.</p>
 								<p class="keynote-links">
 									<a href="https://twitter.com/ingmarweber" target="_blank"><i class="fab fa-twitter"></i></a>
 									<a href="https://ingmarweber.de/" target="_blank"><i class="fas fa-globe"></i></a>
@@ -931,18 +935,18 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 			<p>You can add this calendar to your Google account to recieve notifications on programme updates and have this programme on mobile devices. Use <a href="https://calendar.google.com/calendar?cid=NnZsYWtic2tlanI5ODNlYWdkcWFpZW8zcDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">this link</a> to share the programme.</p>
 			<style>
 				.resp-container {
-				    position: relative;
-				    overflow: hidden;
-				    padding-top: 56.25%;
+						position: relative;
+						overflow: hidden;
+						padding-top: 56.25%;
 				}
 
 				.resp-iframe {
-				    position: absolute;
-				    top: 0;
-				    left: 0;
-				    width: 100%;
-				    height: 100%;
-				    border: 0;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						border: 0;
 				}
 			</style>
 
@@ -1080,6 +1084,82 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				</div>
 			</div>
 
+
+
+			<h3 id="podium" class="text-left">Podium discussion “How access of researchers to privately collected data should be regulated?”</h3>
+
+			<p>The starting point for this discussion is the recent scandal with <a href="https://cambridgeanalytica.org/" target="_blank">Cambridge Analytica</a> – a	company that allegedly influenced the US presidential elections by manipulating Facebook users’ personal data. This data is said to have been leaked to Cambridge Analytica by Alexander Kogan, a researcher working at the core of the global academe – the university of Cambridge – and allegedly having ties with Russia. This breach has eventually resulted in <a href="https://newsroom.fb.com/news/2018/04/restricting-data-access/" target="_blank">closure of many Facebook data access opportunities</a> for researchers worldwide. A panel of competent discussants, including representatives of both the academe and the data industry, will touch different aspects of the problem and possible solutions. The panelists will discuss whether it is possible to simultaneously protect individual privacy, provide enough data for public interest research, ensure opportunities for data related business and exclude opinion manipulation. Prior to the discussion, you can find more information on the scandal in the statements of <a href="https://www.cnbc.com/2018/03/21/zuckerberg-statement-on-cambridge-analytica.html" target="_blank">Mark Zuckerberg</a>, <a href="https://www.theguardian.com/uk-news/2018/mar/21/facebook-row-i-am-being-used-as-scapegoat-says-academic-aleksandr-kogan-cambridge-analytica" target="_blank">Alexander Kogan</a>, <a href="https://www.cambridgefacts.com/" target="_blank">Cambridge Analytica</a> and the <a href="https://www.cam.ac.uk/notices/news/statement-from-the-university-of-cambridge-about-dr-aleksandr-kogan" target="_blank">university of Cambridge</a>.
+			</p>
+			<p>Discussants:</p>
+			<div class="podium-discussants">
+				<div class="parallax_one_grid_col_3 parallax_one_grid_column_1 parallax_one_grid_first ">
+					<div class="testimonials-box" data-scrollreveal="enter right after 0.15s over 1s" parallax_onegrid-attr="this-0" style="-webkit-transform: translatex(25px);-moz-transform: translatex(25px);transform: translatex(25px);opacity: 0;" data-sr-init="true">
+						<div class="feedback border-bottom-hover">
+							<div class="pic-container">
+								<div class="pic-container-inner">
+									<img src="./public/people/Yanina_Ledovaya.jpg" alt="Yanina Ledovaya">
+								</div>
+							</div>
+							<div class="feedback-text-wrap">
+								<h5 class="colored-text"><a href="https://scholar.google.com/citations?user=I5aBDEgAAAAJ&hl=ru" target="_blank">Yanina Ledovaya</a></h5>
+								<p>
+									Senior lecturer in psychology, St.Petersburg University. Dr. Ledovaya is the leader of a research project on prediction of psychological traits with Facebook data that has attracted <a href="https://www.reuters.com/article/uk-facebook-cambridge-analytica-kogan/academic-in-facebook-storm-worked-on-russian-dark-personality-project-idUKKBN1GX2F8" target="_blank">international media attention</a> amidst the Cambridge Analytica scandal as an alleged “link” of Alexander Kogan to Russia.
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="parallax_one_grid_col_3 parallax_one_grid_column_2">
+					<div class="testimonials-box" data-scrollreveal="enter right after 0.15s over 1s" parallax_onegrid-attr="this-0" style="-webkit-transform: translatex(25px);-moz-transform: translatex(25px);transform: translatex(25px);opacity: 0;" data-sr-init="true">
+						<div class="feedback border-bottom-hover">
+							<div class="pic-container">
+								<div class="pic-container-inner">
+									<img src="./public/people/Jonathan_Zhu.jpg" alt="Jonathan Zhu">
+								</div>
+							</div>
+							<div class="feedback-text-wrap">
+								<h5 class="colored-text"><a href="http://www6.cityu.edu.hk/com/People_StaffProfile_Grid.aspx?username=enjhzhu" target="_blank">Jonathan Zhu</a></h5>
+								<p>
+									Chair Professor of Computational Social Science and Director of Center for Communication Research and <a target="_blank" href="http://weblab.com.cityu.edu.hk">Web Mining Lab</a> at City university of Hong Kong. Professor Zhu is one of the signatories of the <a href="https://policyreview.info/articles/news/facebook-shuts-gate-after-horse-has-bolted-and-hurts-real-research-process/786" target="_blank">open letter</a> entitled “Facebook shuts the gate after the horse has bolted, and hurts real research in the process”. This letter criticizes the <a href="https://newsroom.fb.com/news/2018/04/new-elections-initiative/" target="_blank">new Facebook initiative</a> to help researchers access its data, developed together with Professor <a href="https://gking.harvard.edu/" target="_blank">Garry King</a> from Harvard, for failure to provide sufficient support for free and independent scientific research.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="parallax_one_grid_col_3 parallax_one_grid_column_3 parallax_one_grid_last">
+					<div class="testimonials-box" data-scrollreveal="enter right after 0.15s over 1s" parallax_onegrid-attr="this-0" style="-webkit-transform: translatex(25px);-moz-transform: translatex(25px);transform: translatex(25px);opacity: 0;" data-sr-init="true">
+						<div class="feedback border-bottom-hover">
+							<div class="pic-container">
+								<div class="pic-container-inner">
+									<img src="./public/people/Bettina_Berendt.png" alt="Bettina Berendt">
+								</div>
+							</div>
+							<div class="feedback-text-wrap">
+								<h5 class="colored-text"><a href="https://people.cs.kuleuven.be/~bettina.berendt/" target="_blank">Bettina Berendt</a></h5>
+								<p>
+									Professor at the research group <a href="https://dtai.cs.kuleuven.be/" target="_blank">“Declarative Languages and Artificial Intelligence”</a> (DTAI), KU Leuven.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonials-box" data-scrollreveal="enter right after 0.15s over 1s" parallax_onegrid-attr="this-0" style="-webkit-transform: translatex(25px);-moz-transform: translatex(25px);transform: translatex(25px);opacity: 0;" data-sr-init="true">
+						<div class="feedback border-bottom-hover">
+							<div class="pic-container">
+								<div class="pic-container-inner">
+									<img src="./public/people/Vyacheslav_Nesterov.jpg" alt="Vyacheslav Nesterov">
+								</div>
+							</div>
+							<div class="feedback-text-wrap">
+								<h5 class="colored-text"><a href="https://www.hse.ru/data/2018/07/20/317950350748684/C%3a%5cWork_home%5cEMC%5cResumes%5cVyacheslav%20Nesterov_2018.pdf" target="_blank">Vyacheslav Nesterov</a></h5>
+								<p>
+									Ex-CEO at St.Petersburg branch of Dell EMC (a large international company for corporate data storage, transmission and protection), and deputy director at Higher School of Economics, St.Petersburg. Dr.Nesterov will share his views on selective data access based on his vast experience in data business.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<h3 id="posters" class="text-left">Posters</h3>
 
 			<p>You have to bring your poster printed out on A1 format. We will provide the equipment to hang up your poster.</p>
@@ -1440,7 +1520,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 				<div class="col-md-12">
 					<iframe style="float: right; margin-left: 30px; margin-top: 6px;" width="560" height="315" src="https://www.youtube.com/embed/nEDyJE99ik4?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 					<p>Established in early 1990s by a team of reformist academics, Higher School of Economics (HSE) has now become the leading Russia’s university in the sphere of social sciences and humanities. It is also rapidly developing in mathematics and computer science. In 2017, it was ranked number 382 in QS global ranking and included into QS “Top 50 under 50” – a rating for young Universities. According to QS subject rankings, HSE University is among Top 100 in Economics & Econometrics, Top 150 in Accounting and Finance, Top 200 in Business and Management studies.</p>
-					<p>HSE St.Petersburg campus is particularly strong in computational social science and digital humanities. It offers an MA degree in big data analysis in business & society  and a BA degree in sociology &  social informatics. The campus has extensive experience in organizing middle-size international academic events, such as <a href="http://mbi.spb.hse.ru/" target="_blank">BRICS Global Business & Innovation Conference</a>, <a href="https://spb.hse.ru/en/compecon/" target="_blank">Congress of Comparative Economics</a> and <a href="http://egc.spb.hse.ru/en/2017/" target="_blank">Education & Global Cities</a>.</p>
+					<p>HSE St.Petersburg campus is particularly strong in computational social science and digital humanities. It offers an MA degree in big data analysis in business & society	and a BA degree in sociology &	social informatics. The campus has extensive experience in organizing middle-size international academic events, such as <a href="http://mbi.spb.hse.ru/" target="_blank">BRICS Global Business & Innovation Conference</a>, <a href="https://spb.hse.ru/en/compecon/" target="_blank">Congress of Comparative Economics</a> and <a href="http://egc.spb.hse.ru/en/2017/" target="_blank">Education & Global Cities</a>.</p>
 					<p><a target="_blank" href="https://linis.hse.ru/">Laboratory for Internet Studies (LINIS)</a> at HSE focuses on interdisciplinary internet research with the extensive use of big data and computational methods. Established only five years ago, the lab boasts of multiple publications in top journals of the field, including Internet Research, Social Media and Society, International Journal of Communication, Journal of Information Science, Policy & Internet, American Behavioral Scientist and others. During these five years, LINIS has also hosted two international summer schools (<a href="https://wwsss17.hse.ru/" target="_blank">Websci’17</a> and <a href="http://romip.ru/russir2015/" target="_blank">RUSSIR’15</a>), organized two international conferences on social media and co-organized two more summer schools on network analysis.</p>
 				</div>
 			</div>
@@ -1616,8 +1696,8 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 					<p><strong>Normal registration fee</strong>: $400 (between July 24 and September 10, 2018). No discounts or 1-day passes available at this stage.</p>
 					<p>All fees include the lunches and the welcome party, except the 1-day fee that includes the lunch only. Fees for social and cultural events will be announced later.</p>
 
-					<p>Papers eligible for student registration discount should have a student as the first author and be presented by this student in person at the conference. Applicants willing to be considered for student discount should choose “student paper” option during registration in EasyChair and submit a photocopy of any document confirming their student status  (in English or in Russian) shortly after  the paper submission via the conference E-mail. The notification of eligibility for student discount will be provided together with the notification of acceptance. Only applicants who have provided obviously invalid documents can be denied the discount. Papers whose authors have paid a reduced fee without providing any documents will be rejected.</p>
-					<p>Additionally, three best applicants from Russia will be given a 30% discount sponsored by HSE. This discount will be given to individuals holding Russian citizenship who are (a)  full-time researchers or teachers at Russian universities or non-for-profit research organizations  or (b) PhD students at Russian universities or research organizations. Applicants willing to be considered for this discount should choose “Russian paper” option during registration in EasyChair and submit a photocopy of any document confirming their citizenship and employment / PhD programme enrollment (in Russian) shortly after  the paper submission via the conference E-mail. The notification of eligibility for this discount will be provided together with the notification of acceptance. Papers whose authors have paid a reduced fee without providing any documents will be rejected.</p>
+					<p>Papers eligible for student registration discount should have a student as the first author and be presented by this student in person at the conference. Applicants willing to be considered for student discount should choose “student paper” option during registration in EasyChair and submit a photocopy of any document confirming their student status	(in English or in Russian) shortly after	the paper submission via the conference E-mail. The notification of eligibility for student discount will be provided together with the notification of acceptance. Only applicants who have provided obviously invalid documents can be denied the discount. Papers whose authors have paid a reduced fee without providing any documents will be rejected.</p>
+					<p>Additionally, three best applicants from Russia will be given a 30% discount sponsored by HSE. This discount will be given to individuals holding Russian citizenship who are (a)	full-time researchers or teachers at Russian universities or non-for-profit research organizations	or (b) PhD students at Russian universities or research organizations. Applicants willing to be considered for this discount should choose “Russian paper” option during registration in EasyChair and submit a photocopy of any document confirming their citizenship and employment / PhD programme enrollment (in Russian) shortly after	the paper submission via the conference E-mail. The notification of eligibility for this discount will be provided together with the notification of acceptance. Papers whose authors have paid a reduced fee without providing any documents will be rejected.</p>
 					
 					<div id="payment-req">
 						<h3>Payment Methods</h3>
@@ -1749,21 +1829,21 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 					<h3 id="accommodation">Accommodation</h3>
 					<p><strong>We do not provide an accommodation. You can choose yourself one of the following hotels near 3 Kantemirovskaya st.:</strong></p>
 					<ul class="accommodation-list">
-					    <li><a href="http://viborgskaia.ru/eng/" target="_blank">"Viborgskaya" Hotel</a><a href="http://otel-spb.ru/hotels/chernaya_rechka/">Hotel"</a></li>
-					    <li><a href="http://otel-spb.ru/hotels/chernaya_rechka/" target="_blank">Chernaya Rechka"</a><a href="http://www.guyot.spb.ru/gostinitsa">Hotel "Guyot"</a></li>
-					    <li><a href="http://spborbita.ru/" target="_blank">Hotel "Orbita"</a></li>
-					    <li><a href="https://ostrovok.ru/about/?lang=en" target="_blank">Hostel "City 812"</a></li>
-					    <li><a href="http://www.andersenhotel.ru/en/" target="_blank">Hotel "Andersen"</a></li>
-					    <li><a href="http://www.euro-hostel.ru/" target="_blank">Euro Hostel</a></li>
-					    <li><a href="http://hotel-popov.ru/en/" target="_blank">Hotel "Popov"</a></li>
-					    <li><a href="http://ostrovok.ru/hotel/russia/st._petersburg/id6401/evraziya_otel-2/" target="_blank">Hostel "Eurasia"</a></li>
-					    <li><a href="http://a-hotel.spb.ru/en" target="_blank">Mini-hotels group «Atmosphera»</a></li>
-					    <li><a href="http://otel-petropavlovskiy.ru/" target="_blank">Mini-hotel "Petropavlovskiy"</a></li>
-					    <li><a href="http://www.empirepark.ru/en/" target="_blank">Hotel "Empire Park"</a></li>
-					    <li><a href="http://www.marmara.spb.ru/index-en.html" target="_blank">Hotel "Marmara"</a></li>
-					    <li><a href="http://www.baltiyahotel.ru/english.html" target="_blank">Hotel "Baltiya"</a></li>
-					    <li><a href="http://www.lchotel.ru/" target="_blank">Lancaster Court Hotel</a></li>
-					    <li><a href="http://grand24hotel.com/" target="_blank">Petrogradskiy Grand</a></li>
+							<li><a href="http://viborgskaia.ru/eng/" target="_blank">"Viborgskaya" Hotel</a><a href="http://otel-spb.ru/hotels/chernaya_rechka/">Hotel"</a></li>
+							<li><a href="http://otel-spb.ru/hotels/chernaya_rechka/" target="_blank">Chernaya Rechka"</a><a href="http://www.guyot.spb.ru/gostinitsa">Hotel "Guyot"</a></li>
+							<li><a href="http://spborbita.ru/" target="_blank">Hotel "Orbita"</a></li>
+							<li><a href="https://ostrovok.ru/about/?lang=en" target="_blank">Hostel "City 812"</a></li>
+							<li><a href="http://www.andersenhotel.ru/en/" target="_blank">Hotel "Andersen"</a></li>
+							<li><a href="http://www.euro-hostel.ru/" target="_blank">Euro Hostel</a></li>
+							<li><a href="http://hotel-popov.ru/en/" target="_blank">Hotel "Popov"</a></li>
+							<li><a href="http://ostrovok.ru/hotel/russia/st._petersburg/id6401/evraziya_otel-2/" target="_blank">Hostel "Eurasia"</a></li>
+							<li><a href="http://a-hotel.spb.ru/en" target="_blank">Mini-hotels group «Atmosphera»</a></li>
+							<li><a href="http://otel-petropavlovskiy.ru/" target="_blank">Mini-hotel "Petropavlovskiy"</a></li>
+							<li><a href="http://www.empirepark.ru/en/" target="_blank">Hotel "Empire Park"</a></li>
+							<li><a href="http://www.marmara.spb.ru/index-en.html" target="_blank">Hotel "Marmara"</a></li>
+							<li><a href="http://www.baltiyahotel.ru/english.html" target="_blank">Hotel "Baltiya"</a></li>
+							<li><a href="http://www.lchotel.ru/" target="_blank">Lancaster Court Hotel</a></li>
+							<li><a href="http://grand24hotel.com/" target="_blank">Petrogradskiy Grand</a></li>
 					</ul>
 					<br>
 					<br>
@@ -1784,6 +1864,20 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 
 			<div class="row">
 				<div class="col-md-12">
+					<h3><small>Septeber 3</small> Podium discussion</h3>
+					<p>Dear colleagues,</p>
+
+					<p>we are happy to announce podium discussion “How access of researchers to privately collected data should be regulated?”</p>
+
+					<p>You can find more <a href="#podium">here</a>.</p>
+
+					<br>
+
+					<h3><small>June 5</small> SocInfo received a grant from RFBR</h3>
+					<p>We are happy to announce our partnership with Russian Foundation for Basic Research! RFBR supported SocInfo with a grant, which will be used to create better conference for computational social scientists.</p>
+
+					<br>
+
 					<h3><small>July 11</small> Accepted papers</h3>
 					<p>Dear colleagues,</p>
 
@@ -1871,8 +1965,8 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 </div>
 </div>
 
-            <div id="ub_global_footer_content" style="" class=""></div>
-       
+						<div id="ub_global_footer_content" style="" class=""></div>
+			 
 <script type="text/javascript" src="./public/main.js"></script>
 <script type="text/javascript" src="./public/bootstrap.min.js"></script>
 
@@ -1880,48 +1974,93 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 /* <![CDATA[ */
 var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
 /* ]]>*/
-    </script>
-    <script type="text/javascript" src="./public/custom.all.js"></script>
-    <script type="text/javascript" src="./public/plugin.home.js"></script>
-    <script type="text/javascript" src="./public/scrollReveal.js"></script>
-    <script type="text/javascript" src="./public/custom.home.js"></script>
-    <script type="text/javascript" src="./public/skip-link-focus-fix.js"></script>
-    <script type="text/javascript" src="./public/wp-embed.min.js"></script>
+		</script>
+		<script type="text/javascript" src="./public/custom.all.js"></script>
+		<script type="text/javascript" src="./public/plugin.home.js"></script>
+		<script type="text/javascript" src="./public/scrollReveal.js"></script>
+		<script type="text/javascript" src="./public/custom.home.js"></script>
+		<script type="text/javascript" src="./public/skip-link-focus-fix.js"></script>
+		<script type="text/javascript" src="./public/wp-embed.min.js"></script>
 
-    <style type="text/css">
-    .overlay-layer-wrap {
-        background: rgba(0, 0, 0, 0.48);
-    }
-    </style>
+		<style type="text/css">
+		.overlay-layer-wrap {
+				background: rgba(0, 0, 0, 0.48);
+		}
+		</style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112401936-1"></script>
 
 
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'UA-112401936-1');
+	gtag('config', 'UA-112401936-1');
 </script>
 
 
-<!-- <script>
+<script>
 	document.addEventListener("DOMContentLoaded", function(){
 		new Noty({
 		theme: 'metroui',
-		text: 'Dear colleagues, registration for workshops is open!',
+		text: 'Dear colleagues, we are happy to announce podium discussion “How access of researchers to privately collected data should be regulated?”',
 		layout: "topRight",
 		type: "info",
-		  buttons: [
-		    Noty.button('Register', 'btn btn-default', function () {
-		        // window.location.href = 'https://goo.gl/forms/BnlkMmld14BRY0Dk2';
-		        window.open('https://goo.gl/forms/BnlkMmld14BRY0Dk2','_blank');
-		    }, {id: 'button1', 'data-status': 'ok'}),
-		  ]
+			buttons: [
+				Noty.button('Read more', 'btn btn-default', function (e) {
+						// window.location.href = '#podium';
+						// window.open('https://goo.gl/forms/BnlkMmld14BRY0Dk2','_blank');
+					if (window.location.hash !== "") {
+
+						// Prevent default anchor click behavior
+						event.preventDefault();
+
+						// Store hash
+						var hash = window.location.hash;
+
+						// Using jQuery's animate() method to add smooth page scroll
+						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top - 100
+						}, 800, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+							window.location.hash = hash;
+						});
+					}
+				}, {id: 'button1', 'data-status': 'ok'}),
+			]
 	}).show();
 });
 
+</script>
+
+<!-- <script>
+	$("#menu-main-menu a").on('click', function(event) {
+		console.log("fdfd")
+
+	// Make sure this.hash has a value before overriding default behavior
+	if (this.hash !== "") {
+
+		// Prevent default anchor click behavior
+		event.preventDefault();
+
+		// Store hash
+		var hash = this.hash;
+
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top - 100
+		}, 800, function(){
+
+		// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		});
+
+	} // End if
+})
 </script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
