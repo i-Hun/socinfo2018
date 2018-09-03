@@ -2002,7 +2002,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 
 <script>
 	document.addEventListener("DOMContentLoaded", function(){
-		new Noty({
+		var n = new Noty({
 		theme: 'metroui',
 		text: 'Dear colleagues, we are happy to announce podium discussion “How access of researchers to privately collected data should be regulated?”',
 		layout: "topRight",
@@ -2028,6 +2028,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 						// Add hash (#) to URL when done scrolling (default click behavior)
 							window.location.hash = hash;
 						});
+						n.close();
 					}
 				}, {id: 'button1', 'data-status': 'ok'}),
 			]
