@@ -1967,7 +1967,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 
 						<div id="ub_global_footer_content" style="" class=""></div>
 			 
-<script type="text/javascript" src="./public/main.js"></script>
+<!-- <script type="text/javascript" src="./public/main.js"></script> -->
 <script type="text/javascript" src="./public/bootstrap.min.js"></script>
 
 <script type="text/javascript">
@@ -1980,7 +1980,7 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 		<script type="text/javascript" src="./public/scrollReveal.js"></script>
 		<script type="text/javascript" src="./public/custom.home.js"></script>
 		<script type="text/javascript" src="./public/skip-link-focus-fix.js"></script>
-		<script type="text/javascript" src="./public/wp-embed.min.js"></script>
+		<!-- <script type="text/javascript" src="./public/wp-embed.min.js"></script> -->
 
 		<style type="text/css">
 		.overlay-layer-wrap {
@@ -2008,16 +2008,17 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 		layout: "topRight",
 		type: "info",
 			buttons: [
-				Noty.button('Read more', 'btn btn-default', function (e) {
+				Noty.button('Read more', 'btn btn-default', function () {
 						// window.location.href = '#podium';
 						// window.open('https://goo.gl/forms/BnlkMmld14BRY0Dk2','_blank');
-					if (window.location.hash !== "") {
+					// if (window.location.hash !== "") {
 
 						// Prevent default anchor click behavior
-						event.preventDefault();
+						// e.preventDefault();
 
 						// Store hash
-						var hash = window.location.hash;
+						var hash = "#podium";
+						window.location.hash = hash;
 
 						// Using jQuery's animate() method to add smooth page scroll
 						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -2026,10 +2027,11 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 						}, 800, function(){
 
 						// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
+							
 						});
+						console.log("fdfdf")
 						n.close();
-					}
+					// }
 				}, {id: 'button1', 'data-status': 'ok'}),
 			]
 	}).show();
