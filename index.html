@@ -61,17 +61,31 @@
 		padding: 10px 0;
 	}
 
-	.day-wrapper {
+	.dayTitle {
+		display: inline;
+		background-color: #007bf5;
+		color: #fff;
+		padding: 2px;
+	}
+
+	.dayTitle-wrapper {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+/*	.day-wrapper {
 		padding: 20px;
 		background-color: rgba(255, 255, 255, 0.8);
 		box-shadow: 0 0 10px 3px #00000014;
-	}
+	}*/
 
 	.event {
-		padding-bottom: 10px;
+		/*padding-bottom: 10px;*/
 		margin-bottom: 10px;
 	}
-
+	
+	.event-dates {
+		font-weight: 900;
+	}
 	.event-dates, .event-location {
 		/*font-size: 0.85rem*/
 	}
@@ -82,6 +96,11 @@
 
 	.event-description, .event-attachments {
 		/*font-size: 0.9rem*/
+	}
+
+	.event-authors {
+		color: #007bf5;
+		font-style: italic;
 	}
 	
 	.schedule {
@@ -962,28 +981,35 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 					<ul class="days-list">
 						<li class="day" v-for="day in days">
 							<div class="day-wrapper">
-								<h3 class="title is-5">{{day.dayTitle}}</h3>
-								<div class="event" v-for="event in day.events">
-									<a class="event-title" target="_blank" :href="event.htmlLink">{{event.summary}}</a>
-									<div class="event-dates">
-										<i class="far fa-clock"></i>
-										<span>{{formatEventDate(event.start.dateTime, event.end.dateTime)}}</span>
-									</div>
-									<div class="event-location" v-if="event.location">
-										<i class="fas fa-map-marker-alt"></i>
-										<span>
-											{{event.location}}
-										</span>
-									</div>
-									<div v-if="event.attachments && event.attachments.length" class="event-attachments">
-										<div class="attachments buttons">
-											<a class="button is-small" :href="attachment.fileUrl" target="_blank" v-for="attachment in event.attachments">
-												<i class="fas fa-paperclip"></i>
-												<span>{{attachment.title}}</span>
-											</a>
+								<div class="dayTitle-wrapper">
+									<h3 class="title is-5 dayTitle">{{day.dayTitle}}</h3>
+								</div>
+								<div class="event row" v-for="event in day.events">
+										<div class="col-md-2">
+											<div class="event-dates">
+												<span>{{formatEventDate(event.start.dateTime, event.end.dateTime)}}</span>
+											</div>
 										</div>
-									</div>
-									<div class="event-description content" v-if="event.description && event.description.length" v-html="event.description"></div>
+										<div class="col-md-10">
+											<div class="event-title">{{event.summary}}</div>
+											<div class="event-authors" v-if="getAuthors(event.description)">{{getAuthors(event.description)}}</div>
+											<div class="event-location" v-if="event.location">
+												<i class="fas fa-map-marker-alt"></i>
+												<span>
+													{{event.location}}
+												</span>
+											</div>
+											<div v-if="event.attachments && event.attachments.length" class="event-attachments">
+												<div class="attachments buttons">
+													<a class="button is-small" :href="attachment.fileUrl" target="_blank" v-for="attachment in event.attachments">
+														<i class="fas fa-paperclip"></i>
+														<span>{{attachment.title}}</span>
+													</a>
+												</div>
+											</div>
+											<div class="event-description content" v-if="event.description && event.description.length" v-html="formatDescription(event.description)"></div>
+										</div>
+
 								</div>
 							</div>
 						</li>
@@ -1169,7 +1195,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 
 			<p>Your poster should tell something about your current research and scientific interests. The main idea is for all summer school attendees to get to know each other both personally and in terms of scientific orientation. </p>
 
-			<p>Poster session will be held during two days. Posters should be formatted into A1 sheet (841 x 594 mm).</p>
+			<p>Poster session will be held during two days. Posters should be formatted into A1 sheet (841×594 mm).</p>
 
 			<p>In general, posters combine textual and graphical representation of your work. The idea is to explain in easy-accessible way your results to the audience. During the poster session time you are expected to stay close to your poster to address questions and explain in a verbal way your ideas to other participants. </p>
 		</div>
@@ -2136,15 +2162,20 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 			formatEventDate (start, end) {
 				const startFormated = moment(start).tz('Europe/Moscow').format("H:mm");
 				const endFormated = moment(end).tz('Europe/Moscow').format("H:mm");
-				if (startFormated === endFormated) {
-					return `${startFormated}, ${moment(end).tz('Europe/Moscow').format("MMM Do")}`
-				}
-				const diff = moment(end).diff(moment(start))
-				return `${startFormated} — ${endFormated}, ${moment(end).tz('Europe/Moscow').format("MMM Do")} (${moment.duration(diff).asMinutes()} minutes)`;
+
+				return `${startFormated} — ${endFormated}`;
 			},
 			getDay(s) {
 				return moment(s).tz('Europe/Moscow').format("D");
 			},
+			getAuthors(s) {
+				if (s && s.match(/Author.?: (.*)/)) {
+					return s.match(/Author.?: (.*)/)[1]
+				} else return false;
+			},
+			formatDescription(s) {
+				return s.replace(/Author.?:.*/, "")
+			}
 		},
 		computed: {
 			sharngLink () {
