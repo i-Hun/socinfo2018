@@ -63,7 +63,7 @@
 
 	.dayTitle {
 		display: inline;
-		background-color: #007bf5;
+		background-color: #0089cf;
 		color: #fff;
 		padding: 2px;
 	}
@@ -99,7 +99,7 @@
 	}
 
 	.event-authors {
-		color: #007bf5;
+		color: #0089cf;
 		font-style: italic;
 	}
 	
@@ -990,7 +990,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 												<span>{{formatEventDate(event.start.dateTime, event.end.dateTime)}}</span>
 											</div>
 										</div>
-										<div class="col-md-10">
+										<div class="col-md-5">
 											<div class="event-title">{{event.summary}}</div>
 											<div class="event-authors" v-if="getAuthors(event.description)">{{getAuthors(event.description)}}</div>
 											<div class="event-location" v-if="event.location">
@@ -1310,7 +1310,7 @@ The ultimate goal of Social Informatics is to create better understanding of soc
 							<div class="feedback-text-wrap">
 								<h5 class="colored-text">Oleg Nagornyy</h5>
 								<div class="small-text">HSE, Russia</div>
-								<p>Website
+								<p>Website, design
 									<br>
 									<a href="mailto:onagorny@hse.ru">onagorny@hse.ru</a>
 								</p>
