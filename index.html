@@ -2104,11 +2104,11 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
 	function compareDatesStart(a, b) {
-		var start = moment(a.start.dateTime || a.start.date);
+		var start_first = moment(a.start.dateTime || a.start.date);
 		
-		var end = moment(b.start.dateTime || b.start.date);
+		var start_second = moment(b.start.dateTime || b.start.date);
 
-		return start - end;
+		return start_second - start_first;
 	}
 
 	function compareDatesEnd(a, b) {
@@ -2211,11 +2211,8 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 
 				for (const [day, events] of Object.entries(resultDaysObj)) {
 
-					const firstEvent = events.sort(compareDatesStart)[0];
-					const lastEvent = events.sort(compareDatesEnd)[events.length - 1];
-
 					const dayObj = {
-						events: events.sort(compareDatesStart),
+						events: _.orderBy(events, [e => new Date(e.start.dateTime), e => new Date(e.end.dateTime)], ["asc", "desc"]),
 						dayTitle: eventsRangeStartEnd(events)
 					}
 					resultDaysArray.push(dayObj);
