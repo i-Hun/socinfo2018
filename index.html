@@ -2051,20 +2051,35 @@ var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand chil
 
 
 <script>
-	document.addEventListener("DOMContentLoaded", function(){
-		var n = new Noty({
-		theme: 'metroui',
-		text: 'Dear colleagues, conference proceedings are now available online!',
-		layout: "topRight",
-		type: "info",
-			buttons: [
-				Noty.button('Part I, LNCS 11185', 'btn btn-default', function () {
-						window.open('https://link.springer.com/book/10.1007/978-3-030-01129-1','_blank');
-				}),
-				Noty.button('Part II, LNCS 11186', 'btn btn-default', function () {
-						window.open('https://link.springer.com/book/10.1007/978-3-030-01159-8','_blank');
-				}),
-			]
+
+document.addEventListener("DOMContentLoaded", function(){
+	var n = new Noty({
+	theme: 'metroui',
+	text: 'Dear colleagues, conference proceedings are now available online!',
+	layout: "topRight",
+	type: "info",
+		buttons: [
+			Noty.button('Part I, LNCS 11185', 'btn btn-default', function () {
+					window.open('https://link.springer.com/book/10.1007/978-3-030-01129-1','_blank');
+			}),
+			Noty.button('Part II, LNCS 11186', 'btn btn-default', function () {
+					window.open('https://link.springer.com/book/10.1007/978-3-030-01159-8','_blank');
+			}),
+		]
+	}).show();
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+	var n = new Noty({
+	theme: 'metroui',
+	text: 'We have two pleasant updates on conference programme! September 27, we invite you to a bus tour and a boat cruise to get acquainted with St. Petersburg. See the Program for more information. To stay in touch with latest updates join your WhatApp channel',
+	layout: "topRight",
+	type: "info",
+		buttons: [
+			Noty.button('WhatsApp channel', function () {
+					window.open('https://chat.whatsapp.com/2wIiWssj39dHlWBJARTmnP','_blank');
+			})
+		]
 	}).show();
 });
 
